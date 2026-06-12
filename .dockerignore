@@ -1,0 +1,12 @@
+.git
+.specstory
+.cursorindexingignore
+.DS_Store
+**/.DS_Store
+*.log
+qa-*.png
+Dockerfile
+.dockerignore
+DECISIONS.md
+README.md
+speaker-notes.md
