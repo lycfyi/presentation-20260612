@@ -11,6 +11,7 @@ var deck = new Reveal({
   controls: true,
   progress: true,
   slideNumber: 'c/t',
+  pdfSeparateFragments: false,
   plugins: [RevealNotes]
 });
 
