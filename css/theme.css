@@ -831,9 +831,49 @@ section[data-fig="talent"] #fig-talent svg {
   font-weight: 800;
 }
 .titleline-figure {
-  margin-top: 0.8em;
+  margin-top: 0.6em;
   flex: 1;
   min-height: 0;
+}
+
+/* 逆分工对照 strip（原「端到端」页压缩成一行） */
+.reverse-strip {
+  display: flex;
+  align-items: stretch;
+  gap: 0.5em;
+  margin-top: 0.55em;
+}
+.reverse-strip .rs-side {
+  flex: 1;
+  background: #fff;
+  border: 1px solid var(--faint);
+  border-left: 4px solid var(--slate);
+  border-radius: 10px;
+  padding: 0.42em 0.6em;
+  font-family: var(--fh);
+  font-size: 0.58em;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.28;
+}
+.reverse-strip .rs-side small {
+  display: block;
+  margin-top: 0.22em;
+  font-family: var(--ft);
+  font-size: 0.62em;
+  font-weight: 400;
+  color: var(--slate);
+  line-height: 1.4;
+}
+.reverse-strip .rs-side.hot {
+  border-left-color: var(--rust);
+  background: rgba(181, 70, 47, 0.07);
+}
+.reverse-strip .rs-arrow {
+  align-self: center;
+  font-family: var(--fh);
+  font-size: 0.9em;
+  color: var(--rust);
 }
 
 /* mono inline + tags */
@@ -868,6 +908,41 @@ section.dark .quote em { color: var(--gold); }
 section.dark strong { color: var(--gold); }
 section.dark .card { background: #2A2825; }
 section.dark .card .cd { color: #C9C2B6; }
+
+/* 层级终局 · 中层消失后的三角色 */
+.endgame-roles { margin-top: 0.7em; }
+.endgame-roles .er-head {
+  font-family: var(--mono);
+  font-size: 0.4em;
+  letter-spacing: 0.08em;
+  color: var(--gold);
+  margin-bottom: 0.5em;
+}
+.endgame-roles .er-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6em;
+}
+.endgame-roles .er {
+  background: #2A2825;
+  border-top: 2px solid var(--rust);
+  padding: 0.55em 0.66em;
+}
+.endgame-roles .er b {
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.46em;
+  letter-spacing: 0.04em;
+  color: var(--dark-ink);
+  font-weight: 600;
+  margin-bottom: 0.34em;
+}
+.endgame-roles .er span {
+  display: block;
+  font-size: 0.42em;
+  line-height: 1.52;
+  color: #C9C2B6;
+}
 
 /* ---------- cover ---------- */
 .cover-kicker {

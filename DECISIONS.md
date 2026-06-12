@@ -116,3 +116,34 @@ scope: 第 1 章「层级」以前/现在对照
     - **保留**：`fig-span`（管理跨度 4.4→60 可视化）、`company-roster`（Meta/Amazon/Google/MS 扁平化清单）、「去 title 化第二层来源」收口句。
     - **下线**：`fig-flatten`（span→delayering→AI 加速时间线 + 四宫格统计图）整段移除；两页 source/notes 合并去重（军团 decanus 类比并入 notes 口播）。
     - `FIG.flatten`（figures.js/app.js）不再被引用但保留注册，无副作用。
+
+## 2026-06-13 · 「层级终局」页借 Jack Dorsey / Block blog 深化（中层消失后的形态）
+
+```yaml
+date: 2026-06-13
+decided_by: Yucheng（AskUserQuestion：篇幅选「精简，只讲组织去掉中间层后的终局形态」；情绪落点选「信息流金句」）
+scope: 第 2 章 dark 收口页「02 · 层级终局」
+source: Jack Dorsey · Block《From Hierarchy to Intelligence》（Sequoia 引介，公司即 Intelligence / mini-AGI）
+```
+
+24. **「层级终局」页从「协助→取代」的态度宣言，升级为「中层消失后组织塌成什么形态」**：保持**单页、精简**（不拆页、不打断「全场三件事」的节奏）。三段递进：
+    - **桥接**：上一页「AI 帮 manager 多管几十人」只是更好的对讲机；终局是把层级唯一在做的事——**信息路由**——整个交给系统。
+    - **倒置（Block 核心洞见）**：过去智能散在每个人身上、靠层级转述；终局里智能住进系统本身，**人退到 edge**（不是被取代，是上移到判断 / 伦理 / 高风险决策）。
+    - **终局形态（本页重点）**：没有常驻中层，组织塌回三种贴着工作与客户的角色——**IC**（建造运营，world model 替代经理给上下文）/ **DRI**（对某客户结果全权负责、按需调资源）/ **Player-coach**（又做事又带人，接替只做信息路由的旧经理）。
+    - **情绪落点（金句）**：换成 Dorsey 原话「公司快慢只取决于信息怎么流动，层级恰恰挡住它；两千年来问题从来不是『要不要层级』，而是『信息路由是不是只能由人来做』——现在不再是了」，呼应前面 span of control。
+    - **实现**：`css/theme.css` 新增 `.endgame-roles`（`.er-head` gold mono 小标题 + `.er-row` 三列 + `.er` 卡 rust 顶边、dark 底）；`index.html` 该 dark `<section>` 内容整段重写，`.quote .src` 署名改 Jack Dorsey · Block。speaker-notes 同步三段口播。
+
+## 2026-06-13 · 第 2 章 page 8（端到端/逆分工）合并进 page 7（分工史拐点曲线）
+
+```yaml
+date: 2026-06-13
+decided_by: Yucheng（指令「page 8 merge to page 7 and simplify，保留 page 7 的岗位/title 数量 chart，page 7 标题=从分工到逆分工」）
+scope: 第 2 章「去 Title 化」开篇两页合并为一页
+```
+
+25. **「端到端（逆分工）」页（原 page 8）整页并入「分工史拐点曲线」页（原 page 7，含 `fig-titleline` 岗位/title 数量 chart）**：两页本是同一条曲线的两段——上行（分工，造 title）与下行（逆分工，AI 收回 title），合并后一页讲完。
+    - **保留**：`fig-titleline` 岗位/title 数量 chart 作为 hero（chart 本身已含上行→1980s 顶点→AI 拐点下行的标注）。
+    - **新标题**：页加 kicker **「02 · 从分工到逆分工」**；titleline-head 保持「工业革命把 title 越分越细，AI 正在把它收回去」。
+    - **简化**：原页 8 的 `.process-shift` 六宫格（汇报/中转/协调 → 端到端闭环/Agent 编排/人只审关键点）压成**一行对照 `.reverse-strip`**（左：人肉胶水岗位；右：系统端到端闭环），只留核心 before→after，不再占整屏。
+    - **实现**：`css/theme.css` 新增 `.reverse-strip`（flex 两栏 + rust 箭头，hot 侧 rust 微底）；titleline-figure margin 略收。源合并为 Adam Smith / The Great Flattening / Axios 三条（去掉重复的 Job Titles 视频与 Insights@Questrom）。两页 notes 合并成「上行段→拐点→下行段」一段口播。
+    - **遗留**：`.process-shift / .process-box / .process-stack / .process-arrow` CSS 已无 HTML 引用，按「保留注册无副作用」惯例暂留，可后续清理。
