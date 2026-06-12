@@ -10,7 +10,7 @@ var deck = new Reveal({
   transitionSpeed: 'default',
   controls: true,
   progress: true,
-  slideNumber: false,
+  slideNumber: 'c/t',
   plugins: [RevealNotes]
 });
 
@@ -29,6 +29,7 @@ var FIGDEFS = {
 // 进入某页：重建该页所有图并播放动画
 function activateSlide(slide) {
   if (!slide) return;
+  if (window.FIG && FIG.stopLoop) FIG.stopLoop(); // 停掉上一页闭环图的旋转光点
   resetResumeToggle(slide);
   var fig = slide.getAttribute('data-fig');
   if (!fig || fig === 'none') return;
@@ -73,7 +74,19 @@ function initResumeToggle() {
 initResumeToggle();
 
 deck.initialize().then(function () {
-  var start = function(){ activateSlide(deck.getCurrentSlide()); };
+  // print-pdf 导出：所有页同时铺开，逐页激活让动态图直接渲染为最终态
+  if (/print-pdf/gi.test(window.location.search)) {
+    document
+      .querySelectorAll('.reveal .slides section[data-fig]')
+      .forEach(activateSlide);
+    return;
+  }
+  var started = false;
+  var start = function () {
+    if (started) return; // fonts.ready 和超时兜底只能启动一次，否则动画播两遍
+    started = true;
+    activateSlide(deck.getCurrentSlide());
+  };
   if (document.fonts && document.fonts.ready) {
     document.fonts.ready.then(start);
     setTimeout(start, 1500); // 字体加载失败兜底

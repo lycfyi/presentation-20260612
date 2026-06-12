@@ -98,15 +98,18 @@ html, body { background: var(--paper); }
 }
 .lede.big { font-size: 1.0em; color: var(--ink); max-width: 20em; }
 
-/* footer page tag */
-.foot {
-  position: absolute;
-  bottom: 3.4%;
+/* reveal 自动页码（替代手写 .foot，加页不用改数字） */
+.reveal .slide-number {
   right: 6.8%;
+  bottom: 3.4%;
+  left: auto;
+  top: auto;
+  background: transparent;
   font-family: var(--mono);
-  font-size: 0.42em;
+  font-size: 15px;
   color: var(--grey);
   letter-spacing: 0.05em;
+  padding: 0;
 }
 .source {
   position: absolute;
@@ -178,55 +181,6 @@ html, body { background: var(--paper); }
   line-height: 1.56;
   color: var(--ink);
 }
-.detitle-split {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.78em;
-  margin-top: 0.68em;
-}
-.detitle-pillar {
-  background: #fff;
-  border: 1px solid var(--faint);
-  border-radius: 14px;
-  padding: 0.78em 0.88em;
-  min-height: 9.6em;
-}
-.detitle-pillar .num {
-  font-family: var(--mono);
-  color: var(--rust);
-  font-size: 0.5em;
-  letter-spacing: 0.14em;
-  margin-bottom: 0.55em;
-}
-.detitle-pillar h2 {
-  font-size: 1.02em;
-  line-height: 1.18;
-}
-.detitle-pillar p {
-  margin-top: 0.72em;
-  font-size: 0.58em;
-  line-height: 1.56;
-  color: var(--slate);
-}
-.detitle-pillar strong {
-  color: var(--rust);
-}
-.detitle-arrow {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-  gap: 0.42em;
-  margin-top: 0.78em;
-  font-family: var(--fh);
-  font-weight: 900;
-  font-size: 0.64em;
-}
-.detitle-arrow span {
-  color: var(--grey);
-  text-align: center;
-}
-.detitle-arrow b:first-child { color: var(--slate); }
-.detitle-arrow b:last-child { color: var(--rust); text-align: right; }
 .fact-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -635,23 +589,20 @@ section.dark .bigword { color: var(--dark-ink); }
   height: 100%;
 }
 
-/* screenshot-style titleline story slide */
-.titleline-slide {
-  padding: 3.3% 2.7% 4.1%;
-}
+/* titleline story slide（沿用全局 .slide-pad 留白与标题字阶） */
 .titleline-head {
   font-family: var(--fh);
-  font-size: 2.0em;
+  font-size: 1.42em;
   font-weight: 900;
-  line-height: 1.08;
-  max-width: 17.5em;
+  line-height: 1.12;
+  max-width: 22em;
   margin: 0;
 }
 .titleline-head span {
   color: var(--rust);
 }
 .titleline-copy {
-  margin-top: 0.85em;
+  margin-top: 0.6em;
   max-width: 43em;
   font-size: 0.66em;
   line-height: 1.62;
@@ -661,11 +612,8 @@ section.dark .bigword { color: var(--dark-ink); }
   color: var(--ink);
   font-weight: 800;
 }
-.titleline-copy strong:last-child {
-  color: var(--ink);
-}
 .titleline-figure {
-  margin-top: 1.12em;
+  margin-top: 0.8em;
   flex: 1;
   min-height: 0;
 }
@@ -778,6 +726,21 @@ section.dark .card .cd { color: #C9C2B6; }
 /* section divider 大章节封面 */
 .sec-num { font-family:var(--mono); font-size:0.6em; color:var(--rust); letter-spacing:0.2em; }
 .sec-title { font-family:var(--fh); font-weight:700; font-size:1.9em; line-height:1.1; margin-top:0.25em; }
+
+/* 浅色章节分隔页：surf 底 + 超大章节数字水印，给章节边界一个明确的视觉信号 */
+.reveal section.divider { background: var(--surf); }
+section.divider .slide-pad::after {
+  content: attr(data-num);
+  position: absolute;
+  right: 2%;
+  bottom: -8%;
+  font-family: var(--fh);
+  font-weight: 900;
+  font-size: 11em;
+  line-height: 1;
+  color: rgba(181, 70, 47, 0.08);
+  pointer-events: none;
+}
 
 /* progress + controls color */
 .reveal .progress { color: var(--rust); height: 4px; }

@@ -38,9 +38,11 @@
     return Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
   }
   function reduced() {
+    // print-pdf 导出时没有逐帧动画，直接渲染最终态
     return (
-      window.matchMedia &&
-      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+      /print-pdf/gi.test(window.location.search) ||
+      (window.matchMedia &&
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches)
     );
   }
 
@@ -74,6 +76,17 @@
   }
 
   var FIG = {};
+
+  // 闭环图旋转光点的 rAF 句柄：换页 / 重建时必须取消，避免在后台永远空转
+  var loopRaf = null,
+    loopSession = 0;
+  FIG.stopLoop = function () {
+    loopSession++;
+    if (loopRaf) {
+      cancelAnimationFrame(loopRaf);
+      loopRaf = null;
+    }
+  };
 
   /* ---------- 00 分工史的拐点：title 从无到激增，再被 AI 抹平 ---------- */
   FIG.titleline = function (id) {
@@ -341,7 +354,7 @@
         t: 0.7,
         yr: "2023",
         head: "效率之年",
-        sub: "Meta: Flatter is faster",
+        sub: "硅谷转向：少层级、快决策",
         col: C.gold,
         up: true,
       },
@@ -349,7 +362,7 @@
         t: 0.96,
         yr: "2024-26",
         head: "AI 加速",
-        sub: "Amazon / Google / Microsoft / Intel",
+        sub: "削层从趋势变成默认动作",
         col: C.rust,
         up: false,
       },
@@ -466,7 +479,7 @@
     var host = clear(id);
     if (!host) return function () {};
     var svg = el("svg", {
-      viewBox: "0 0 1000 245",
+      viewBox: "0 0 1000 200",
       width: "100%",
       role: "img",
       "aria-label":
@@ -482,29 +495,9 @@
     ];
     var x0 = 118,
       x1 = 918,
-      y0 = 196,
+      y0 = 180,
       max = 60;
     var rowGap = 42;
-    var title = txt(500, 24, "管理跨度的百年趋势：4.4 → 7.2 → 12.1 → 60", {
-      "text-anchor": "middle",
-      "font-size": 24,
-      "font-weight": 900,
-      fill: C.ink,
-      "font-family": "Noto Serif SC",
-    });
-    svg.appendChild(title);
-    var sub = txt(
-      500,
-      50,
-      "直接下属人数越多，组织越不需要用层级来分摊协调成本",
-      {
-        "text-anchor": "middle",
-        "font-size": 14.5,
-        fill: C.slate,
-        "font-family": "Noto Sans SC",
-      },
-    );
-    svg.appendChild(sub);
     svg.appendChild(
       el("line", {
         x1: x0,
@@ -518,7 +511,7 @@
 
     var groups = [];
     data.forEach(function (d, i) {
-      var y = 72 + i * rowGap;
+      var y = 26 + i * rowGap;
       var w = ((x1 - x0) * d.v) / max;
       var g = el("g", {});
       g.appendChild(
@@ -573,7 +566,7 @@
     callout.appendChild(
       el("rect", {
         x: 596,
-        y: 158,
+        y: 100,
         width: 316,
         height: 42,
         rx: 10,
@@ -583,7 +576,7 @@
       }),
     );
     callout.appendChild(
-      txt(614, 184, "60 个直接下属 ≈ 砍掉约 7 层管理", {
+      txt(614, 126, "60 个直接下属 ≈ 砍掉约 7 层管理", {
         "text-anchor": "start",
         "font-size": 15.5,
         "font-weight": 700,
@@ -594,8 +587,6 @@
     svg.appendChild(callout);
 
     return function () {
-      fade(title, 0, 300);
-      fade(sub, 100, 300);
       groups.forEach(function (item) {
         item.g.style.opacity = 0;
         fade(item.g, 220 + item.i * 180, 360);
@@ -1045,9 +1036,9 @@
     svg.appendChild(foot);
     host.appendChild(svg);
 
-    var raf = null;
     return function () {
-      if (raf) cancelAnimationFrame(raf);
+      FIG.stopLoop();
+      var session = loopSession;
       grow(arc, 200, 1400, 2 * Math.PI * R);
       groups.forEach(function (g, i) {
         fade(g, 500 + i * 260, 450);
@@ -1062,14 +1053,16 @@
       }
       var t0 = null;
       function spin(ts) {
+        if (session !== loopSession) return;
         if (t0 === null) t0 = ts;
         var ang = ((ts - t0) / 3200) * Math.PI * 2 - Math.PI / 2;
         dot.setAttribute("cx", cx + Math.cos(ang) * R);
         dot.setAttribute("cy", cy + Math.sin(ang) * R);
-        raf = requestAnimationFrame(spin);
+        loopRaf = requestAnimationFrame(spin);
       }
       setTimeout(function () {
-        raf = requestAnimationFrame(spin);
+        if (session !== loopSession) return;
+        loopRaf = requestAnimationFrame(spin);
       }, 1600);
     };
   };
