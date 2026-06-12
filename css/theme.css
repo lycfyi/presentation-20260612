@@ -568,6 +568,175 @@ section.dark .bigword { color: var(--dark-ink); }
   padding: 0.72em 0.86em;
 }
 
+/* 文艺复兴页：keynote 配图 + 两个要点 */
+.renai-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.04fr) minmax(0, 0.96fr);
+  gap: 1.15em;
+  align-items: center;
+  align-content: center;
+  flex: 1;
+  min-height: 0;
+  margin-top: 0.5em;
+}
+.renai-art {
+  margin: 0;
+  min-width: 0;
+}
+.renai-art img {
+  width: 100%;
+  max-height: 340px;
+  object-fit: contain;
+  object-position: left center;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.3);
+}
+.renai-art figcaption {
+  font-family: var(--fh);
+  font-size: 0.5em;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+  margin-top: 0.55em;
+}
+.renai-points {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+  min-width: 0;
+}
+.renai-points .card {
+  padding: 0.72em 0.86em;
+}
+.renai-points .card .cd {
+  line-height: 1.55;
+}
+.renai-points .card .cd b {
+  font-family: var(--fh);
+  font-weight: 700;
+  color: var(--rust);
+  margin-right: 0.3em;
+}
+
+/* talent 页：为底部「真实例子」截图腾出空间 */
+section[data-fig="talent"] .fig {
+  flex: 0 1 auto;
+}
+section[data-fig="talent"] #fig-talent svg {
+  max-width: 80%;
+}
+.talent-proof {
+  display: flex;
+  align-items: center;
+  gap: 1.1em;
+  margin-top: 0.6em;
+  max-width: 42em;
+}
+.talent-proof img {
+  flex: none;
+  width: 300px;
+  border-radius: 10px;
+  border: 1px solid var(--faint);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.28);
+}
+.talent-proof p {
+  margin: 0;
+  font-size: 0.6em;
+  line-height: 1.6;
+  color: var(--slate);
+}
+.talent-proof strong {
+  color: var(--rust);
+  font-weight: 700;
+}
+
+/* talent 页：左对照表 + 右 Fun Fact 配图 */
+.talent-layout {
+  display: grid;
+  grid-template-columns: 1fr 322px;
+  gap: 1.1em;
+  align-items: start;
+  margin-top: 0.55em;
+}
+.talent-layout .cmp {
+  margin-top: 0;
+}
+.fun-fact {
+  background: var(--surf);
+  border: 1px solid var(--faint);
+  border-radius: 12px;
+  padding: 0.62em 0.7em 0.7em;
+}
+.fun-fact .tag {
+  font-family: var(--mono);
+  font-size: 0.34em;
+  letter-spacing: 0.16em;
+  color: var(--rust);
+  margin-bottom: 0.5em;
+}
+.fun-fact img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid var(--faint);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+.fun-fact p {
+  margin: 0.55em 0 0;
+  font-size: 0.42em;
+  line-height: 1.5;
+  color: var(--slate);
+}
+.fun-fact strong {
+  color: var(--rust);
+  font-weight: 700;
+}
+
+/* 达·芬奇 ↔ 当代 Builder 对照表 */
+.cmp {
+  display: grid;
+  grid-template-columns: 5.4em 1fr 1fr;
+  margin-top: 0.5em;
+  border: 1px solid var(--faint);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.cmp > div {
+  padding: 0.52em 0.62em;
+  font-size: 0.4em;
+  line-height: 1.46;
+  border-top: 1px solid var(--faint);
+  color: var(--slate);
+}
+.cmp .h {
+  border-top: 0;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--fh);
+  font-weight: 700;
+  font-size: 0.42em;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+}
+.cmp .h.b {
+  color: var(--gold);
+}
+.cmp .d {
+  background: var(--surf);
+  font-family: var(--fh);
+  font-weight: 700;
+  color: var(--ink);
+}
+.cmp .b {
+  background: rgba(181, 70, 47, 0.05);
+  color: var(--ink);
+}
+.cmp .b strong {
+  color: var(--rust);
+  font-weight: 700;
+}
+
 /* svg figure container */
 .fig {
   width: 100%;

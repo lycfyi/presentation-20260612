@@ -1239,7 +1239,7 @@
       {
         x: 750,
         tag: "AI NATIVE · 2026",
-        name: "文艺复兴式 Builder",
+        name: "超级个体：文艺复兴式 Builder",
         color: C.teal,
         dark: true,
         rows: [

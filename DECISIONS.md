@@ -77,3 +77,42 @@ scope: 第 2 章页序
 
 20. **「为什么是文艺复兴」页前移**：从「对照图之后」挪到**简历页之后、对照图之前**。新页序：简历 →「为什么是文艺复兴」→「隔五百年对照图」→ 金句收口。理由——先用结构性论证说明「为什么这种人又稀缺」，再用对照图做视觉收束，逻辑更顺；对照图的「杠杆换了、人没换」正好接在三引擎之后当一句话总结。
 21. **「文艺复兴式 Builder 特质」六卡片页暂时下线**：Yucheng 指令「先去掉」（「先」=暂时，非永久删除）。HTML 中整段 `<section>` 移除；speaker-notes.md 对应段落**保留口播稿**并标注「⚠️ 此页暂时从 deck 下线」，需要时可快速复原。当前 deck 在对照图后直接进金句页。
+
+## 2026-06-13 · 章节 1 / 2 对调 + 改名「超级个体与文艺复兴」
+
+```yaml
+date: 2026-06-13
+decided_by: Yucheng（明确指令：原第 2 章改名后挪到第 1 章，原第 1 章顺为第 2 章）
+scope: 顶层章节顺序
+```
+
+22. **章节对调**：原「第 2 章 · 需要什么样的人」（达·芬奇简历 / 文艺复兴论证 / 对照图 / Vogels 金句）→ 改名 **「超级个体与文艺复兴」** 并前移为**第 1 章**；原「第 1 章 · 去 Title 化」顺延为**第 2 章**。第 3 / 4 章不变。HTML 中两个章节 `<section>` 块整体对调，所有 `sec-num` / `data-num` / `kicker` 编号与封面 notes 的议程顺序同步从 01↔02 互换。
+    - **⚠️ 待办（narrative seam，未自动改）**：① 新第 1 章（文艺复兴）末尾 Vogels 金句页的过渡 notes 仍写「需要一家什么样的公司来承载？进第 3 章」——现在它后面接的是第 2 章「去 Title 化」，过渡语与章节号都需重写。② 原第 1 章末尾的「两种角色 + 超级个体」落点页现在落在第 2 章末，与新章序的衔接需 Yucheng 确认。这两处叙事桥接保持原样，等 Yucheng 定调后再调。
+
+## 2026-06-13 · 「隔五百年对照图」改为九维对照表（#/10）
+
+```yaml
+date: 2026-06-13
+decided_by: Yucheng（提供九行对照表，指令「page 10 use this to replace」+「做一下必要的简化」）
+scope: 第 2 章「隔五百年，我们需要一样的品质」页（#/10）
+```
+
+22. **#/10 页从 SVG 人才对照图（`FIG.talent`）换成显式九维对照表**：用户给了一张「维度 / 达·芬奇 / 当代文艺复兴式 Builder」九行表（核心驱动力、主要媒介、工具、研究对象、知识结构、工作方式、影响路径、时间尺度、与时代工具的关系）。
+    - **必要的简化**：剥掉原文每格尾部的 `youtube` 引用残留；每格压成短句（多为一行），加小标题「同一种稀缺，换了一套杠杆」。
+    - **实现**：`css/theme.css` 新增 `.cmp` 三列网格表（header 深底、`维度`列 surf 底加粗、Builder 列 `.b` rust 微底 + `<strong>` 关键词高亮）；`index.html` 该 `<section>` 的 `data-fig` 从 `talent` 改 `none`，移除 `#fig-talent` 与 steipete「Fun Fact」配图（fun-fact 改进 notes 口播保留）。
+    - `FIG.talent`（figures.js/app.js）不再被引用但保留注册，无副作用。
+    - **后续（同日）**：Yucheng 把表收到 **6 行**、改用引言句开场，并要求**把 @steipete 配图放回来**。最终版改成 `.talent-layout` 两栏（左对照表 1fr / 右 `.fun-fact` 配图卡 322px）：右卡放 steipete 那条「the Leonardo da Vinci of the AI Renaissance」X 截图 + 一句 Fun Fact 文案。README / notes 同步「六维 + 配图」。
+
+## 2026-06-13 · 第 1 章「层级」两页合并为一页（page 5+6）
+
+```yaml
+date: 2026-06-13
+decided_by: Yucheng（指令「合并 page 4 5 并简化」，经确认实为 Reveal c/t 计数的 page 5+6）
+scope: 第 1 章「层级」以前/现在对照
+```
+
+23. **「以前·层级是生物跨度逼出来的」（`fig=flatten`）与「现在·AI 协助 manager 管几十人」（`fig=span`）合并为一页**：原本是一组「以前/现在」对照双页，合并成单页 `data-fig="span"`。
+    - **简化**：以前侧的 `definition-band`（span of control 3–8 人 / 科层制是生物跨度产物）与现在侧的 AI 自动化论点折进**同一段** definition-band；标题改为「层级曾是生物跨度逼出来的，AI 第一次把它压平」。
+    - **保留**：`fig-span`（管理跨度 4.4→60 可视化）、`company-roster`（Meta/Amazon/Google/MS 扁平化清单）、「去 title 化第二层来源」收口句。
+    - **下线**：`fig-flatten`（span→delayering→AI 加速时间线 + 四宫格统计图）整段移除；两页 source/notes 合并去重（军团 decanus 类比并入 notes 口播）。
+    - `FIG.flatten`（figures.js/app.js）不再被引用但保留注册，无副作用。
