@@ -1,0 +1,258 @@
+/* ============================================================
+   超级个体时代的公司组织新形态 — 浅色编辑风 reveal.js 主题
+   纯静态 · 本地 vendor · 双击 index.html 即可播放
+   ============================================================ */
+
+:root {
+  --paper:  #FAF7F2;
+  --surf:   #F3EDE2;
+  --ink:    #1C1B1A;
+  --rust:   #B5462F;
+  --teal:   #2F6B6B;
+  --gold:   #C8902A;
+  --slate:  #4A5568;
+  --grey:   #8A8378;
+  --faint:  #D8D0C2;
+  --white:  #FFFFFF;
+  --dark-bg:#1C1B1A;
+  --dark-ink:#F2ECE0;
+
+  --fh: "Noto Serif SC", "Songti SC", "STSong", Georgia, serif;
+  --ft: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+  --mono: "JetBrains Mono", "SF Mono", "Consolas", monospace;
+}
+
+/* ---------- base ---------- */
+html, body { background: var(--paper); }
+.reveal {
+  font-family: var(--ft);
+  font-size: 34px;
+  color: var(--ink);
+  font-weight: 400;
+}
+.reveal .slides { text-align: left; }
+.reveal .slides section {
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* slide inner wrapper for consistent padding */
+.slide-pad {
+  position: absolute;
+  inset: 0;
+  padding: 5.4% 6.8%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.slide-pad.center { justify-content: center; }
+
+/* ---------- typography ---------- */
+.reveal h1, .reveal h2, .reveal h3 {
+  font-family: var(--fh);
+  color: var(--ink);
+  font-weight: 700;
+  line-height: 1.14;
+  margin: 0;
+  text-transform: none;
+  letter-spacing: 0;
+}
+.reveal h1 { font-size: 1.0em; }
+.reveal p  { line-height: 1.55; margin: 0; }
+.reveal strong { color: var(--rust); font-weight: 700; }
+.reveal em { font-style: normal; color: var(--teal); }
+.reveal a  { color: var(--rust); text-decoration: none; }
+
+/* kicker / eyebrow */
+.kicker {
+  font-family: var(--ft);
+  font-size: 0.5em;
+  letter-spacing: 0.22em;
+  color: var(--rust);
+  font-weight: 600;
+  margin-bottom: 0.6em;
+}
+
+.title-lg {
+  font-family: var(--fh);
+  font-size: 1.42em;
+  font-weight: 700;
+  line-height: 1.12;
+  margin-bottom: 0.55em;
+}
+.title-md {
+  font-family: var(--fh);
+  font-size: 1.12em;
+  font-weight: 700;
+  line-height: 1.16;
+  margin-bottom: 0.5em;
+}
+
+/* lede — 一句话主张，控制密度的关键样式 */
+.lede {
+  font-size: 0.84em;
+  color: var(--slate);
+  line-height: 1.6;
+  max-width: 24em;
+}
+.lede.big { font-size: 1.0em; color: var(--ink); max-width: 20em; }
+
+/* footer page tag */
+.foot {
+  position: absolute;
+  bottom: 3.4%;
+  right: 6.8%;
+  font-family: var(--mono);
+  font-size: 0.42em;
+  color: var(--grey);
+  letter-spacing: 0.05em;
+}
+.source {
+  position: absolute;
+  bottom: 3.4%;
+  left: 6.8%;
+  font-family: var(--ft);
+  font-size: 0.38em;
+  color: var(--grey);
+  max-width: 60%;
+}
+.source a { color: var(--slate); border-bottom: 1px solid var(--faint); }
+
+/* cards */
+.card {
+  background: var(--surf);
+  border-radius: 14px;
+  padding: 0.85em 1.1em;
+}
+.card .ct { font-family: var(--fh); font-weight:700; font-size:0.8em; margin-bottom:0.25em; }
+.card .cd { font-size: 0.62em; color: var(--slate); line-height:1.5; }
+
+/* grid of cards */
+.grid { display: grid; gap: 0.7em; }
+.grid.g2 { grid-template-columns: 1fr 1fr; }
+.grid.g3 { grid-template-columns: repeat(3,1fr); }
+
+/* dash list */
+ul.dash { list-style: none; margin: 0; padding: 0; }
+ul.dash li {
+  position: relative;
+  padding-left: 1.1em;
+  margin: 0.5em 0;
+  line-height: 1.5;
+  font-size: 0.78em;
+}
+ul.dash li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: var(--rust);
+}
+ul.dash li b { color: var(--ink); font-weight: 700; }
+
+/* numbered big steps (去Title化 / 三件事) */
+.steps { display:flex; gap:5%; margin-top:0.3em; }
+.step { flex:1; }
+.step .n { font-family:var(--mono); font-size:0.9em; color:var(--rust); font-weight:600; }
+.step .t { font-family:var(--fh); font-weight:700; font-size:0.92em; margin:0.18em 0 0.18em; line-height:1.2; }
+.step .d { font-size:0.6em; color:var(--slate); line-height:1.5; }
+
+/* big word */
+.bigword {
+  font-family: var(--fh);
+  font-weight: 700;
+  font-size: 3.0em;
+  text-align: center;
+  line-height: 1;
+}
+section.dark .bigword { color: var(--dark-ink); }
+
+/* two-col */
+.row { display: flex; gap: 5%; align-items: stretch; }
+.col { flex: 1; }
+
+/* svg figure container */
+.fig {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+}
+.fig svg { width: 100%; height: 100%; max-height: 100%; overflow: visible; }
+
+/* mono inline + tags */
+.m { font-family: var(--mono); font-size: 0.92em; }
+.tag { color: var(--rust); font-weight: 600; }
+.tag-teal { color: var(--teal); font-weight: 600; }
+.pill {
+  display:inline-block; font-family:var(--mono); font-size:0.42em;
+  letter-spacing:0.1em; color:var(--teal); border:1px solid var(--faint);
+  border-radius:999px; padding:0.25em 0.8em; margin-bottom:0.6em;
+}
+
+/* quote / 金句 */
+.quote {
+  font-family: var(--fh);
+  font-size: 1.0em;
+  line-height: 1.45;
+  color: var(--ink);
+}
+.quote .src { display:block; font-family:var(--mono); font-size:0.42em; color:var(--grey); margin-top:0.8em; letter-spacing:0.04em; }
+
+/* ---------- dark slides ---------- */
+.reveal section.dark { background: var(--dark-bg); }
+section.dark .slide-pad { color: var(--dark-ink); }
+section.dark h1, section.dark h2, section.dark h3 { color: var(--dark-ink); }
+section.dark .kicker { color: var(--rust); }
+section.dark p, section.dark .lede { color: #D8D1C5; }
+section.dark .lede.big { color: var(--dark-ink); }
+section.dark .foot { color: #6B655C; }
+section.dark .quote { color: var(--dark-ink); }
+section.dark .quote em { color: var(--gold); }
+section.dark strong { color: var(--gold); }
+section.dark .card { background: #2A2825; }
+section.dark .card .cd { color: #C9C2B6; }
+
+/* ---------- cover ---------- */
+.cover-kicker {
+  font-family: var(--mono);
+  letter-spacing: 0.3em;
+  font-size: 0.46em;
+  color: var(--rust);
+  margin-bottom: 0.9em;
+}
+.cover-title {
+  font-family: var(--fh);
+  font-weight: 700;
+  font-size: 2.3em;
+  line-height: 1.04;
+  color: var(--dark-ink);
+}
+.cover-title .accent { color: var(--rust); }
+.cover-sub {
+  font-size: 0.7em;
+  color: #C9C2B6;
+  margin-top: 0.7em;
+  font-weight: 300;
+}
+.cover-by {
+  font-family: var(--mono);
+  font-size: 0.42em;
+  color: #837C72;
+  margin-top: 2.0em;
+  letter-spacing: 0.08em;
+}
+
+/* section divider 大章节封面 */
+.sec-num { font-family:var(--mono); font-size:0.6em; color:var(--rust); letter-spacing:0.2em; }
+.sec-title { font-family:var(--fh); font-weight:700; font-size:1.9em; line-height:1.1; margin-top:0.25em; }
+
+/* progress + controls color */
+.reveal .progress { color: var(--rust); height: 4px; }
+.reveal .progress span { background: var(--rust); }
+.reveal .controls { color: var(--rust); }
+
+/* fragment tuning */
+.reveal .fragment.fade-in-then-semi-out.visible { opacity: 1; }
