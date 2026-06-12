@@ -1,651 +1,1169 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>超级个体时代的公司组织新形态 · Yucheng Liu</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>超级个体时代的公司组织新形态 · Yucheng Liu</title>
 
-  <!-- reveal.js 核心（本地 vendor，离线可用） -->
-  <link rel="stylesheet" href="vendor/reveal/reveal.css">
+    <!-- reveal.js 核心（本地 vendor，离线可用） -->
+    <link rel="stylesheet" href="vendor/reveal/reveal.css" />
 
-  <!-- 字体：联网时用 Google Fonts，离线自动回退到系统中文字体（PingFang / 苹方 / 雅黑） -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@500;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <!-- 字体：联网时用 Google Fonts，离线自动回退到系统中文字体（PingFang / 苹方 / 雅黑） -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@500;700;900&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="css/theme.css">
-</head>
-<body>
-<div class="reveal">
-  <div class="slides">
-
-    <!-- ============ 封面 ============ -->
-    <section class="dark" data-fig="none">
-      <div class="slide-pad center">
-        <div style="position:absolute;top:9%;right:8%;width:230px;height:230px;">
-          <svg viewBox="0 0 230 230" style="width:100%;height:100%;">
-            <circle cx="115" cy="115" r="100" fill="none" stroke="#2F6B6B" stroke-width="2.5"/>
-            <circle cx="115" cy="115" r="58" fill="none" stroke="#B5462F" stroke-width="3"/>
-          </svg>
-        </div>
-        <div class="cover-kicker">AI NATIVE × 超级个体</div>
-        <div class="cover-title">超级个体时代的<br>公司组织<span class="accent">新形态</span></div>
-        <div class="cover-sub">—— 当执行被 AI 接管，组织还剩下什么</div>
-        <div class="cover-by">Yucheng Liu · Lucius AI</div>
-      </div>
-      <aside class="notes">
-        开场一句话定调：今天不聊工具，聊「人和组织」。AI 接管执行之后，公司这个东西本身在变形。
-        全场就三件事 + 一点私货：① 去 Title 化 ② 需要什么样的人 ③ 搭一家 AI Native 公司到底在搭什么。
-      </aside>
-    </section>
-
-    <!-- ============ 章节 1 · 去 Title 化 ============ -->
-    <section data-fig="none">
-      <div class="slide-pad center">
-        <div class="sec-num">01</div>
-        <div class="sec-title">去「Title」化</div>
-        <p class="lede big" style="margin-top:0.5em;">头衔不是天经地义的。<br>它是<strong>分工</strong>的副产品 —— 而分工的逻辑，正在被 AI 改写。</p>
-      </div>
-      <div class="foot">01 / 14</div>
-      <aside class="notes">
-        先别急着讲「去 title」。先问一个更根本的问题：title 到底是从哪来的？
-        它不是自古就有的，它是「分工」这件事发展到一定程度的必然产物。
-        我们用一条时间轴，把分工史的拐点摆出来——你会发现 title 的激增和塌缩，都跟着分工层级走。
-      </aside>
-    </section>
-
-    <!-- 新增：分工史拐点时间轴 -->
-    <section data-fig="titleline">
-      <div class="slide-pad">
-        <div class="kicker">01 · 分工史的拐点</div>
-        <h1 class="title-md">Title 激增，又被 AI 抹平</h1>
-        <div class="fig" id="fig-titleline"></div>
-      </div>
-      <div class="source">Source:
-        <a href="https://www.econlib.org/library/Topics/College/divisionoflaborspecialization.html">Adam Smith · 制针厂分工</a> ·
-        <a href="https://www.youtube.com/watch?v=Mzjpt31gxdA">Where Did Job Titles Come From</a> ·
-        <a href="https://www.youtube.com/watch?v=eYABDRxtt3M">The Great Flattening</a>
-      </div>
-      <div class="foot">02 / 14</div>
-      <aside class="notes">
-        1776 斯密制针厂：把造针拆成 18 道工序，单人产能从 ~20 枚/天飙到 ~4800 枚/天——分工是生产力的起点，但这时还没有 title。
-        1900s 工业革命 + 泰勒制：上百号人在大工厂干专门活，旧行会管不过来，于是直接借军队层级——中尉变经理、上尉变总监、上校变 VP。title 第一次激增。
-        1960s 起知识工作兴起：一个 VP 可能谁都不管，「senior 某某」和普通版没差别——title 与实际工作脱钩，开始通胀。
-        今天：Gartner 预测 2026 年 20% 的组织用 AI 砍掉过半中层（大扁平化）。分工层级被抽掉，title 跟着失重。
-        一句话：title 是分工的副产品，分工层级越多头衔越多；AI 抽掉中间层，头衔自然塌缩。
-      </aside>
-    </section>
-
-    <!-- 新增：title 三个功能 + 为什么失重 -->
-    <section data-fig="none">
-      <div class="slide-pad">
-        <div class="kicker">01 · Title 到底在干嘛</div>
-        <h1 class="title-md">它本来扛着三件事 —— 三件事都被 AI 接走了</h1>
-        <div class="grid g3" style="margin-top:0.5em;">
-          <div class="card">
-            <div class="ct">信息路由</div>
-            <div class="cd">找谁审批、谁汇报给谁。<br><span style="color:var(--teal);">→ 信息可被即时查询，路由消失</span></div>
+    <link rel="stylesheet" href="css/theme.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- ============ 封面 ============ -->
+        <section class="dark" data-fig="none">
+          <div class="slide-pad center">
+            <div
+              style="
+                position: absolute;
+                top: 9%;
+                right: 8%;
+                width: 230px;
+                height: 230px;
+              "
+            >
+              <svg viewBox="0 0 230 230" style="width: 100%; height: 100%">
+                <circle
+                  cx="115"
+                  cy="115"
+                  r="100"
+                  fill="none"
+                  stroke="#2F6B6B"
+                  stroke-width="2.5"
+                />
+                <circle
+                  cx="115"
+                  cy="115"
+                  r="58"
+                  fill="none"
+                  stroke="#B5462F"
+                  stroke-width="3"
+                />
+              </svg>
+            </div>
+            <div class="cover-kicker">AI NATIVE × 超级个体</div>
+            <div class="cover-title">
+              超级个体时代的<br />公司组织<span class="accent">新形态</span>
+            </div>
+            <div class="cover-sub">—— 当执行被 AI 接管，组织还剩下什么</div>
+            <div class="cover-author">
+              <div class="author-name">
+                Yucheng Liu <span>Twitter: @yucheng</span>
+              </div>
+              <div class="author-roles">
+                <div><b>出海去</b><span>Founder · 一人公司出海社区</span></div>
+                <div>
+                  <b>Lucius AI</b
+                  ><span>Co-founder · AI 组织的 Context Layer</span>
+                </div>
+                <div><b>Tutti.so</b><span>Builder · 影响力出海平台</span></div>
+              </div>
+              <div class="author-tag">INTJ</div>
+            </div>
           </div>
-          <div class="card">
-            <div class="ct">协调分工</div>
-            <div class="cd">谁负责哪一环、怎么对接。<br><span style="color:var(--teal);">→ agent 执行 + 闭环自协调</span></div>
+          <aside class="notes">
+            开场一句话定调：今天不聊工具，聊「人和组织」。AI
+            接管执行之后，公司这个东西本身在变形。 全场就三件事 + 一点私货：① 去
+            Title 化 ② 需要什么样的人 ③ 搭一家 AI Native 公司到底在搭什么。
+          </aside>
+        </section>
+
+        <!-- ============ 章节 1 · 去 Title 化 ============ -->
+        <section data-fig="none">
+          <div class="slide-pad center">
+            <div class="sec-num">01</div>
+            <div class="sec-title">去「Title」化</div>
+            <p class="lede big" style="margin-top: 0.5em">
+              头衔不是天经地义的。<br />它是<strong>分工</strong>的副产品 ——
+              而分工的逻辑，正在被 AI 改写。
+            </p>
           </div>
-          <div class="card">
-            <div class="ct">身份激励</div>
-            <div class="cd">用层级给人「升迁」的盼头。<br><span style="color:var(--teal);">→ 价值回到「你做成了什么」</span></div>
+          <div class="foot">01 / 17</div>
+          <aside class="notes">
+            先别急着讲「去 title」。先问一个更根本的问题：title 到底是从哪来的？
+            它不是自古就有的，它是「分工」这件事发展到一定程度的必然产物。
+            我们用一条时间轴，把分工史的拐点摆出来——你会发现 title
+            的激增和塌缩，都跟着分工层级走。
+          </aside>
+        </section>
+
+        <!-- 新增：分工史拐点时间轴 -->
+        <section data-fig="titleline">
+          <div class="slide-pad titleline-slide">
+            <h1 class="titleline-head">
+              工业革命把 title 越分越细，<br />AI 正在<span>把它收回去</span>
+            </h1>
+            <p class="titleline-copy">
+              过去 <strong>250 年</strong>，组织的主旋律只有一个方向：<strong
+                >把工作切得越来越细，每切一刀，就多一个 title。</strong
+              >
+              从制针厂到泰勒制，这条曲线涨了两个世纪。AI
+              是历史上第一次让它<strong>掉头向下</strong>——不是更细，而是合并。
+            </p>
+            <div
+              class="fig figure-card titleline-figure"
+              id="fig-titleline"
+            ></div>
           </div>
-        </div>
-        <p class="lede" style="margin-top:0.7em;">三根支柱被同时抽走，<strong>Title 这座金字塔就失去了地基。</strong></p>
-      </div>
-      <div class="source">Source:
-        <a href="https://www.youtube.com/watch?v=Mzjpt31gxdA">Where Did Job Titles Come From</a> ·
-        <a href="https://www.youtube.com/watch?v=eYABDRxtt3M">The Great Flattening</a>
-      </div>
-      <div class="foot">03 / 14</div>
-      <aside class="notes">
-        Title 同时被用来解决三个问题：组织权威（路由）、协调分工、激励身份——这恰恰是它最大的问题，三件事经常互相打架（YouTube「Where Did Job Titles Come From」的核心观点）。
-        AI Native 组织把这三件事各自接管：信息可查询（路由没了）、agent + 闭环自协调（协调没了）、价值回到结果（身份激励换锚点）。
-        三根支柱同时被抽走，金字塔自然塌。留下来的，只有两种角色。
-      </aside>
-    </section>
-
-    <section data-fig="none">
-      <div class="slide-pad">
-        <div class="kicker">01 · 去 Title 化的落点</div>
-        <h1 class="title-lg">组织里只剩两种角色</h1>
-        <div class="grid g2" style="margin-top:0.4em;">
-          <div class="card">
-            <div class="ct" style="color:var(--rust);">唯一负责人</div>
-            <div class="cd">对一件事的结果负责到底。调度 AI、调度人、做判断、背责任。不在乎头衔，在乎「这事成没成」。</div>
+          <div class="source">
+            Source:
+            <a
+              href="https://www.econlib.org/library/Topics/College/divisionoflaborspecialization.html"
+              >Adam Smith · 制针厂分工</a
+            >
+            ·
+            <a href="https://www.youtube.com/watch?v=Mzjpt31gxdA"
+              >Where Did Job Titles Come From</a
+            >
+            ·
+            <a href="https://www.youtube.com/watch?v=eYABDRxtt3M"
+              >The Great Flattening</a
+            >
           </div>
-          <div class="card">
-            <div class="ct" style="color:var(--teal);">只做一环的执行者</div>
-            <div class="cd">把某个环节做到极致。可以是人，越来越多是 agent。重要但可替换、可并行、可外包。</div>
+          <div class="foot">02 / 17</div>
+          <aside class="notes">
+            1776 斯密制针厂：把造针拆成 18 道工序，单人产能从 ~20 枚/天飙到
+            ~4800 枚/天——分工是生产力的起点，但这时还没有 title。 1900s 工业革命
+            +
+            泰勒制：上百号人在大工厂干专门活，旧行会管不过来，于是直接借军队层级——中尉变经理、上尉变总监、上校变
+            VP。title 第一次激增。 1960s 起知识工作兴起：一个 VP
+            可能谁都不管，「senior 某某」和普通版没差别——title
+            与实际工作脱钩，开始通胀。 今天：Gartner 预测 2026 年 20% 的组织用
+            AI 砍掉过半中层（大扁平化）。分工层级被抽掉，title 跟着失重。
+            一句话：title 是分工的副产品，分工层级越多头衔越多；AI
+            抽掉中间层，头衔自然塌缩。
+          </aside>
+        </section>
+
+        <section data-fig="none">
+          <div class="slide-pad">
+            <div class="kicker">01 · 去 Title 化</div>
+            <h1 class="title-lg">不是取消头衔，而是两条组织逻辑同时反转</h1>
+            <div class="detitle-split">
+              <div class="detitle-pillar">
+                <div class="num">01 · DIVISION OF LABOR</div>
+                <h2>分工：从“越切越细”到“端到端”</h2>
+                <p>
+                  过去 250
+                  年，每一次把一件事拆成更多步骤，就诞生一批新岗位、新头衔。AI
+                  第一次让这条曲线掉头：不是更细，而是合并成端到端闭环。
+                </p>
+                <div class="detitle-arrow">
+                  <b>流程切碎</b><span>→</span><b>端到端闭环</b>
+                </div>
+              </div>
+              <div class="detitle-pillar">
+                <div class="num">02 · SPAN OF CONTROL</div>
+                <h2>层级：从“管不过来”到“AI 扩大管理跨度”</h2>
+                <p>
+                  泰勒制把规划和执行分开，军事式层级帮助组织避免管理跨度过大。AI
+                  把汇报、跟踪、协调信息流自动化后，一个 manager
+                  可以管理更多人。
+                </p>
+                <div class="detitle-arrow">
+                  <b>多层级管理</b><span>→</span><b>大扁平化</b>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <p class="lede" style="margin-top:0.8em;">角色随事流动，不再钉死在层级里。<strong>超级个体，就是把这两种角色压进同一个人身上。</strong></p>
-      </div>
-      <div class="foot">04 / 14</div>
-      <aside class="notes">
-        别把这两种角色理解成「领导 / 下属」——它是「负责到底 vs 只做一环」。
-        一个人在 A 项目是唯一负责人，在 B 项目可能就是只做一环的执行者，角色随事流动，不再钉死在某个 title 里。
-        超级个体的本质：一个人同时扮演负责人 + 一整排 agent 执行者。这就是后面「N=1 的 AI Native 公司」。
-      </aside>
-    </section>
-
-    <!-- ============ 章节 2 · 需要什么样的人 ============ -->
-    <section data-fig="none">
-      <div class="slide-pad center">
-        <div class="sec-num">02</div>
-        <div class="sec-title">AI Native 组织<br>需要什么样的人</div>
-        <p class="lede big" style="margin-top:0.5em;">世上第一份简历，写的正是今天最稀缺的那种人 —— 隔了五百年，需求几乎没变。</p>
-      </div>
-      <div class="foot">05 / 14</div>
-      <aside class="notes">
-        Hook：1482 年，达·芬奇给米兰公爵写的求职信，被后世当作已知最早的简历。
-        五百年后，Werner Vogels 在 AWS re:Invent 2025 告别演讲里，几乎在描述同一个人。
-      </aside>
-    </section>
-
-    <section data-fig="none">
-      <div class="slide-pad">
-        <div class="kicker">02 · 五百年前的那份简历</div>
-        <h1 class="title-lg">十条里九条在讲工程，<br>最后一条才提：「我也会画画」</h1>
-        <p class="lede" style="margin-top:0.3em;">1482 年他写信给米兰公爵 —— 后世公认的第一份简历。</p>
-        <div class="grid g2" style="margin-top:0.6em;">
-          <div class="card">
-            <div class="ct" style="font-size:0.7em;">第 1–9 条</div>
-            <div class="cd">便携桥梁、攻城器械、火炮、战船、地下通道…… <strong style="color:var(--rust);">九条全在讲军事工程</strong>。</div>
+          <div class="source">
+            Source:
+            <a href="https://www.econlib.org/library/Enc/DivisionofLabor.html"
+              >Econlib</a
+            >
+            ·
+            <a href="https://en.wikipedia.org/wiki/Scientific_management"
+              >Scientific Management</a
+            >
+            ·
+            <a href="https://en.wikipedia.org/wiki/Great_flattening"
+              >Great flattening</a
+            >
           </div>
-          <div class="card">
-            <div class="ct" style="font-size:0.7em;">第 10 条</div>
-            <div class="cd">「对了，我也会画画、雕塑。」<br>“In painting, I can do everything possible.”</div>
+          <div class="foot">03 / 17</div>
+          <aside class="notes">
+            这页先把去 title 化拆成两件事：分工逻辑反转，层级逻辑反转。
+            前者是从越切越细到端到端；后者是从避免 manager 管不过来到 AI 帮
+            manager 管更多人。
+          </aside>
+        </section>
+
+        <section data-fig="none">
+          <div class="slide-pad">
+            <div class="kicker">01 · 分工逻辑</div>
+            <h1 class="title-md">以前：把流程切得越细，title 就长得越多</h1>
+            <p class="lede" style="max-width: 34em">
+              每一次“把一件事拆成更多步骤”，就诞生一批新岗位、新头衔。这是工业化效率提升的核心机制。
+            </p>
+            <div class="fact-grid">
+              <div class="fact-card">
+                <div class="n">1 → 18</div>
+                <div class="t">
+                  亚当·斯密的制针厂：一根针被拆成 18 道独立工序，分给 18 类人。
+                </div>
+                <div class="s">Panmure House · Econlib</div>
+              </div>
+              <div class="fact-card">
+                <div class="n">规划 / 执行</div>
+                <div class="t">
+                  泰勒制（科学管理）把“动脑的人”和“动手的人”彻底分成两类岗位。
+                </div>
+                <div class="s">Scientific Management</div>
+              </div>
+              <div class="fact-card">
+                <div class="n">324 → ~1000</div>
+                <div class="t">
+                  美国官方职业数从 1850 年的 324 个，涨到今天约 1000 个；今天
+                  60% 的工作在 1940 年不存在。
+                </div>
+                <div class="s">IPUMS 1850 · MIT / Autor 2024</div>
+              </div>
+            </div>
+            <p class="lede" style="margin-top: 0.72em">
+              这就是 title 的第一层来源：<strong
+                >流程被切碎以后，需要名字来标记每一段。</strong
+              >
+            </p>
           </div>
-        </div>
-        <p class="lede" style="margin-top:0.7em;">我们把他记成「画家」，但他把自己写成 <strong>一个能在工程、水利、解剖、绘画之间自由穿行、把一件事从头做成的人。</strong></p>
+          <div class="source">
+            Source:
+            <a
+              href="https://www.panmurehouse.org/perspectives/articles/adam-smith-and-the-pin-factory/"
+              >Panmure House</a
+            >
+            ·
+            <a href="https://www.econlib.org/library/Enc/DivisionofLabor.html"
+              >Econlib</a
+            >
+            ·
+            <a
+              href="https://news.mit.edu/2024/most-work-is-new-work-us-census-data-shows-0401"
+              >MIT / Autor 2024</a
+            >
+          </div>
+          <div class="foot">04 / 17</div>
+          <aside class="notes">
+            这页讲分工的上行段：制针厂、泰勒制、职业数增长。 title
+            并不是天然存在，而是分工越来越细之后，用来命名每一段流程的标签。
+          </aside>
+        </section>
+
+        <section data-fig="none">
+          <div class="slide-pad">
+            <div class="kicker">01 · 分工反转</div>
+            <h1 class="title-md">
+              现在：AI 用端到端闭环，把“胶水岗位”收回系统
+            </h1>
+            <p class="lede" style="max-width: 35em">
+              汇报、中转、协调这些“分工产生的胶水岗位”，正是 AI
+              最先吃掉的部分。中层被重新定义为“可被自动化的人肉中间件”。
+            </p>
+            <div class="process-shift">
+              <div class="process-stack">
+                <div class="process-box">
+                  <b>汇报</b><span>状态、进度、阻塞点，过去靠层层转述。</span>
+                </div>
+                <div class="process-box">
+                  <b>中转</b
+                  ><span>信息从一个岗位流向另一个岗位，需要人工接力。</span>
+                </div>
+                <div class="process-box">
+                  <b>协调</b
+                  ><span
+                    >拆任务、催进度、对齐上下文，靠会议和 manager 兜底。</span
+                  >
+                </div>
+              </div>
+              <div class="process-arrow">→</div>
+              <div class="process-stack">
+                <div class="process-box hot">
+                  <b>端到端闭环</b
+                  ><span>执行、反馈、学习、改进在系统里连续发生。</span>
+                </div>
+                <div class="process-box hot">
+                  <b>Agent 编排</b
+                  ><span>任务路由和跨工具触发由 agent 接走。</span>
+                </div>
+                <div class="process-box hot">
+                  <b>人只审关键点</b
+                  ><span>人的位置上移到定义意图、做判断、为结果负责。</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="source">
+            Source:
+            <a
+              href="https://www.axios.com/2025/07/08/ai-middle-managers-flattening-layoffs"
+              >Axios</a
+            >
+            ·
+            <a
+              href="https://insights.bu.edu/flattening-the-firm-what-we-lose-when-middle-managers-disappear/"
+              >Insights@Questrom</a
+            >
+          </div>
+          <div class="foot">05 / 17</div>
+          <aside class="notes">
+            工业化用“越分越细”制造 title；AI 用“端到端闭环”把它们收回去。
+            这里重点不是岗位名消失，而是原来靠人做胶水的环节变成系统能力。
+          </aside>
+        </section>
+
+        <section data-fig="flatten">
+          <div class="slide-pad">
+            <div class="kicker">01 · 层级逻辑</div>
+            <h1 class="title-md">
+              以前：层级是为了解决 manager 管不过来的问题
+            </h1>
+            <div class="definition-band">
+              <div class="t">SPAN OF CONTROL</div>
+              <p>
+                <strong>管理跨度</strong
+                >就是一个经理能有效管理多少人。泰勒制把规划和执行分开，军事式层级把责任向上汇总，本质都是在避免单个
+                manager 面对过大的复杂度。
+              </p>
+            </div>
+            <div class="fig" id="fig-flatten" style="margin-top: 0.15em"></div>
+          </div>
+          <div class="source">
+            Source:
+            <a href="https://en.wikipedia.org/wiki/Scientific_management"
+              >Scientific Management</a
+            >
+            ·
+            <a href="https://www.hrbench.com/resource/learn/span-of-control"
+              >HR Bench / Gallup</a
+            >
+            ·
+            <a href="https://en.wikipedia.org/wiki/Great_flattening"
+              >Great flattening</a
+            >
+          </div>
+          <div class="foot">06 / 17</div>
+          <aside class="notes">
+            这页讲层级：不是为了好看，而是为了解决管理跨度。
+            当信息、任务和反馈都靠人处理时，一个 manager
+            管不了太多人，所以组织自然长出更多层。
+          </aside>
+        </section>
+
+        <section data-fig="span">
+          <div class="slide-pad">
+            <div class="kicker">01 · 层级反转</div>
+            <h1 class="title-md">
+              现在：AI 协助一个 manager 管几十人，组织自然变扁
+            </h1>
+            <p class="lede" style="max-width: 36em">
+              AI
+              把经理曾经的核心工作：汇报、跟踪、协调信息流直接自动化，让“管更多人、少几层”第一次变得真正可行。
+            </p>
+            <div class="fig span-figure" id="fig-span"></div>
+            <div class="company-roster">
+              <div class="h">谁在扁平化 · 2023→2026</div>
+              <ul>
+                <li><b>Meta</b>：效率之年，“Flatter is faster”。</li>
+                <li><b>Amazon</b>：一线贡献者 : 经理比例提高约 15%。</li>
+                <li><b>Google</b>：砍掉 VP 与经理岗。</li>
+                <li>
+                  <b>Microsoft / Intel / Bayer</b
+                  >：压平管理层级、削掉数千名经理。
+                </li>
+              </ul>
+            </div>
+            <p class="lede" style="margin-top: 0.55em">
+              这就是去 title 化的第二层来源：<strong
+                >层级减少以后，用来标记层级的 title 也跟着消失。</strong
+              >
+            </p>
+          </div>
+          <div class="source">
+            Source:
+            <a
+              href="https://www.businessinsider.com/microsoft-amazon-google-embrace-flatter-structure-fewer-managers-boost-efficiency-2025-5"
+              >Business Insider</a
+            >
+            ·
+            <a
+              href="https://www.axios.com/2025/07/08/ai-middle-managers-flattening-layoffs"
+              >Axios</a
+            >
+            ·
+            <a href="https://www.hrbench.com/resource/learn/span-of-control"
+              >HR Bench / Gallup</a
+            >
+          </div>
+          <div class="foot">07 / 17</div>
+          <aside class="notes">
+            这页讲 AI 时代管理跨度变宽。 当系统能持续汇报、跟踪、协调，一个
+            manager 就能覆盖更多人，组织少几层也能运行。
+          </aside>
+        </section>
+
+        <!-- ============ 章节 2 · 需要什么样的人 ============ -->
+        <section data-fig="none">
+          <div class="slide-pad center">
+            <div class="sec-num">02</div>
+            <div class="sec-title">AI Native 组织<br />需要什么样的人</div>
+            <p class="lede big" style="margin-top: 0.5em">
+              世上第一份简历，写的正是今天最稀缺的那种人 ——
+              隔了五百年，需求几乎没变。
+            </p>
+          </div>
+          <div class="foot">08 / 17</div>
+          <aside class="notes">
+            Hook：1482
+            年，达·芬奇给米兰公爵写的求职信，被后世当作已知最早的简历。
+            五百年后，Werner Vogels 在 AWS re:Invent 2025
+            告别演讲里，几乎在描述同一个人。
+          </aside>
+        </section>
+
+        <section data-fig="none">
+          <div class="slide-pad resume-slide">
+            <figure
+              class="resume-art resume-toggle"
+              role="button"
+              tabindex="0"
+              aria-label="达·芬奇 1482 年求职信，点击切换原图和中文翻译"
+              aria-pressed="false"
+            >
+              <div class="resume-original" aria-hidden="false">
+                <img
+                  src="assets/da-vinci-resume.jpg"
+                  alt="达·芬奇 1482 年给米兰公爵求职信原图"
+                />
+                <span class="resume-state">原图</span>
+              </div>
+              <div class="resume-translation resume-motion" aria-hidden="true">
+                <div class="resume-doc-head">
+                  <span>LEONARDO · 1482</span>
+                  <b>给米兰公爵的求职信</b>
+                </div>
+                <div class="resume-lines">
+                  <div class="resume-line">
+                    <span>01</span>
+                    <p>
+                      我能制造轻便、坚固、易于搬运的桥梁，可用于进攻和撤退。
+                    </p>
+                  </div>
+                  <div class="resume-line">
+                    <span>02</span>
+                    <p>我能设计攻城器械、火炮、战船、地下通道和防御工事。</p>
+                  </div>
+                  <div class="resume-line">
+                    <span>09</span>
+                    <p>我能处理水利、军事工程和复杂机械，把方案真正落地。</p>
+                  </div>
+                  <div class="resume-line art">
+                    <span>10</span>
+                    <p>和平时期，我也能完成绘画、雕塑和建筑。</p>
+                  </div>
+                </div>
+                <div class="resume-doc-foot">
+                  九条工程能力，最后才补一句：我也会艺术。
+                </div>
+                <span class="resume-state">中文翻译</span>
+              </div>
+            </figure>
+            <div class="resume-copy">
+              <div class="kicker">02 · 五百年前的那份简历</div>
+              <h1 class="title-lg">
+                十条里九条在讲工程，<br />最后一条才提：「我也会画画」
+              </h1>
+              <p class="lede" style="margin-top: 0.3em">
+                1482 年他写信给米兰公爵 —— 后世公认的第一份简历。
+              </p>
+              <div class="grid g2" style="margin-top: 0.6em">
+                <div class="card">
+                  <div class="ct" style="font-size: 0.7em">第 1–9 条</div>
+                  <div class="cd">
+                    便携桥梁、攻城器械、火炮、战船、地下通道……
+                    <strong style="color: var(--rust)"
+                      >九条全在讲军事工程</strong
+                    >。
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="ct" style="font-size: 0.7em">第 10 条</div>
+                  <div class="cd">
+                    「对了，我也会画画、雕塑。」<br />“In painting, I can do
+                    everything possible.”
+                  </div>
+                </div>
+              </div>
+              <p class="lede" style="margin-top: 0.7em">
+                我们把他记成「画家」，但他把自己写成
+                <strong
+                  >一个能在工程、水利、解剖、绘画之间自由穿行、把一件事从头做成的人。</strong
+                >
+              </p>
+            </div>
+          </div>
+          <div class="source">
+            Source:
+            <a
+              href="https://artsandculture.google.com/story/leonardo-s-cover-letter-biblioteca-ambrosiana/sQVRpZ4EhlnSKg"
+              >Google Arts &amp; Culture</a
+            >
+            ·
+            <a href="https://www.britannica.com/biography/Leonardo-da-Vinci"
+              >Britannica</a
+            >
+          </div>
+          <div class="foot">09 / 17</div>
+          <aside class="notes">
+            重点不是「他多才多艺」这种鸡汤，而是：文艺复兴稀缺的从来不是「最会画的」或「最会造炮的」，
+            而是「能跨领域架桥、拿一个问题从头做到尾」的人。这正是 AI
+            时代重新变稀缺的能力。
+          </aside>
+        </section>
+
+        <section data-fig="talent">
+          <div class="slide-pad">
+            <div class="kicker">02 · 同一种稀缺，隔了五百年</div>
+            <div class="fig" id="fig-talent"></div>
+          </div>
+          <div class="source">
+            Source:
+            <a href="https://www.youtube.com/watch?v=3Y1G9najGiI"
+              >Werner Vogels · AWS re:Invent 2025</a
+            >
+          </div>
+          <div class="foot">10 / 17</div>
+          <aside class="notes">
+            左：达·芬奇，背后是梅迪奇家族给的资金与「算力」。右：文艺复兴式
+            Builder，背后是一群并行的 AI agent。 杠杆换了，稀缺的人没换。Vogels
+            原话：「The work is yours, not that of the
+            tools.」——活儿是你的，不是工具的。
+            底部那条「不变的」最关键：执行被接管后，判断什么值得做、怎么做对，始终是人的位置。
+          </aside>
+        </section>
+
+        <section data-fig="none">
+          <div class="slide-pad">
+            <div class="kicker">02 · 文艺复兴式 Builder 的特质</div>
+            <h1 class="title-md">看懂、判对、为结果背责</h1>
+            <div class="grid g3" style="margin-top: 0.5em">
+              <div class="card">
+                <div class="ct">好奇心</div>
+                <div class="cd">
+                  不断拆开东西、搞懂它怎么运作——做深做透的起点。
+                </div>
+              </div>
+              <div class="card">
+                <div class="ct">敢试 · 容错</div>
+                <div class="cd">
+                  真正的实验，事先不知道结果。失败是学习的一部分。
+                </div>
+              </div>
+              <div class="card">
+                <div class="ct">会沟通</div>
+                <div class="cd">
+                  对人、对 AI，把意图讲清楚和把技术想透同样重要。
+                </div>
+              </div>
+              <div class="card">
+                <div class="ct">Ownership</div>
+                <div class="cd">
+                  代码是 AI 写的，质量、合规、线上正确性的责任还是你的。
+                </div>
+              </div>
+              <div class="card">
+                <div class="ct">T 型</div>
+                <div class="cd">
+                  一处扎深，多处拓宽。看得见整个系统，才做得出好判断。
+                </div>
+              </div>
+              <div class="card">
+                <div class="ct">用机制</div>
+                <div class="cd">
+                  好意不产出好结果。在 AI 高速产出之上，加一层机制兜底。
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="source">
+            Source:
+            <a href="https://www.youtube.com/watch?v=3Y1G9najGiI"
+              >Werner Vogels · AWS re:Invent 2025</a
+            >
+            ·
+            <a href="https://www.youtube.com/watch?v=tqF_OBxUHPo"
+              >Tomer Cohen · Full-Stack Builder</a
+            >
+          </div>
+          <div class="foot">11 / 17</div>
+          <aside class="notes">
+            六个特质不用逐条念，挑两三个有感觉的展开。最想留给观众的一句： AI
+            接管了「执行」，而 comprehension、judgment、accountability
+            依然是人的位置。 Vogels 收尾金句：「Will AI make me obsolete?
+            Absolutely not. If you
+            evolve.」——会被淘汰的不是开发者，是不进化的开发者。
+          </aside>
+        </section>
+
+        <!-- ============ 章节 3 · 搭一家 AI Native 公司 ============ -->
+        <section data-fig="none">
+          <div class="slide-pad center">
+            <div class="sec-num">03</div>
+            <div class="sec-title">
+              当我说「搭建<br />AI Native 公司」，<br />我在说什么
+            </div>
+            <div class="steps" style="margin-top: 0.9em">
+              <div class="step">
+                <div class="n">01</div>
+                <div class="t">让公司可被查询</div>
+                <div class="d">make it queryable</div>
+              </div>
+              <div class="step">
+                <div class="n">02</div>
+                <div class="t">把动作连成闭环</div>
+                <div class="d">close the loop</div>
+              </div>
+              <div class="step">
+                <div class="n">03</div>
+                <div class="t">增加被动技能</div>
+                <div class="d">各种 Buff</div>
+              </div>
+            </div>
+          </div>
+          <div class="foot">12 / 17</div>
+          <aside class="notes">
+            不是「上几个 AI
+            工具」。是把公司本身改造成三件事：能被查询、动作成闭环、能力会叠加。
+            接下来一页一张图，逐个讲。
+          </aside>
+        </section>
+
+        <section data-fig="query">
+          <div class="slide-pad">
+            <div class="kicker">03 · 第一件事</div>
+            <h1 class="title-md">
+              让公司可被查询
+              <span
+                style="
+                  font-family: var(--mono);
+                  font-size: 0.55em;
+                  color: var(--grey);
+                "
+                >make it queryable</span
+              >
+            </h1>
+            <p
+              class="lede"
+              style="margin-top: 0.1em; margin-bottom: 0.2em; font-size: 0.66em"
+            >
+              空调知道室温才能自调；多数公司<strong
+                >不知道自己的「室温」</strong
+              >
+              —— 知识散落、问不到。
+            </p>
+            <div class="fig" id="fig-query"></div>
+          </div>
+          <div class="foot">13 / 17</div>
+          <aside class="notes">
+            类比你家空调：它知道室温、知道你设的温度，所以能自己调。大多数公司不知道自己的「室温」——
+            知识散落在文档、代码、对话、指标里，没法被一次问到。 让公司
+            queryable，就是让任何人/agent
+            一次提问，就能把散落各处的知识即时调出、还能追问。这是后面闭环的前提。
+          </aside>
+        </section>
+
+        <section data-fig="loop">
+          <div class="slide-pad">
+            <div class="kicker">03 · 第二件事</div>
+            <h1 class="title-md">
+              把动作连成<span style="color: var(--rust)">闭环</span>
+              <span
+                style="
+                  font-family: var(--mono);
+                  font-size: 0.55em;
+                  color: var(--grey);
+                "
+                >close the loop</span
+              >
+            </h1>
+            <p
+              class="lede"
+              style="margin-top: 0.1em; margin-bottom: 0.2em; font-size: 0.66em"
+            >
+              <strong>开环</strong>：执行完就没下文，复盘靠开会。<strong
+                style="color: var(--rust)"
+                >闭环</strong
+              >：结果立刻回流，系统自我修正。
+            </p>
+            <div class="fig" id="fig-loop"></div>
+          </div>
+          <div class="foot">14 / 17</div>
+          <aside class="notes">
+            开环：做决策、执行，然后……没有然后了。复盘靠开会，反馈靠下季度，每个环节都在丢信息。
+            闭环：执行→反馈→学习→改进，每个动作结果立刻回流，系统自我修正。
+            公司的速度不等于执行速度，等于「环路转一圈」的速度。中央那个旋转光点就是这个意思。
+          </aside>
+        </section>
+
+        <section data-fig="buff">
+          <div class="slide-pad">
+            <div class="kicker">03 · 第三件事</div>
+            <h1 class="title-md">
+              增加公司的被动技能
+              <span
+                style="
+                  font-family: var(--mono);
+                  font-size: 0.55em;
+                  color: var(--grey);
+                "
+                >各种 Buff</span
+              >
+            </h1>
+            <p
+              class="lede"
+              style="margin-top: 0.1em; margin-bottom: 0.2em; font-size: 0.66em"
+            >
+              每加一个能力（自动化 / agent / 记忆 /
+              闭环），公司基线<strong>永久抬高一截，叠加生效</strong>。
+            </p>
+            <div class="fig" id="fig-buff"></div>
+          </div>
+          <div class="foot">15 / 17</div>
+          <aside class="notes">
+            被动技能 =
+            不用你每次操心、自动在背景里生效的能力。自动化、agent、记忆、闭环——
+            每加一个，公司的基线就被永久抬高一截，而且叠加生效（右上那条上扬虚线）。
+            这就是 AI Native 公司的复利：今天的投入变成明天的默认能力。
+          </aside>
+        </section>
+
+        <!-- ============ 章节 4 · 写在最后的私货 ============ -->
+        <section class="dark" data-fig="none">
+          <div class="slide-pad center">
+            <div class="sec-num">04</div>
+            <div class="sec-title">写在最后的私货</div>
+            <p class="lede big" style="margin-top: 0.5em; color: #d8d1c5">
+              框架讲完了。剩下几句，是我自己真信、也一直在做的。
+            </p>
+          </div>
+          <div class="foot">16 / 17</div>
+          <aside class="notes">
+            语气切换：前面是论证，这里是私人分享。慢一点，看着人讲。五条，不用全展开，挑当下最有感觉的。
+          </aside>
+        </section>
+
+        <section data-fig="none">
+          <div class="slide-pad">
+            <div class="kicker">04 · 私货</div>
+            <ul class="dash" style="margin-top: 0.2em">
+              <li>
+                <b>初心是小宇宙。</b
+                >——真正驱动你走远的，不是市场有多大，是你心里那个不肯熄的小宇宙。
+              </li>
+              <li>
+                <b>开发者该想的是怎么成为 CMO，而不是 CTO。</b
+                >——技术不再是壁垒，让人知道、让人想用，才是。
+              </li>
+              <li>
+                <b>不要拼命挣扎，就像掉水里别拼命扑腾。</b
+                >——越用力越下沉；放松、借力，反而浮起来。
+              </li>
+              <li>
+                <b>当下最重要的资质是勇气。</b
+                >——和三年前我辞职时的答案，一字不差。
+              </li>
+              <li>
+                <b>每个人都该有自己的事业，哪怕暂时微不足道。</b
+                >——它现在不起眼，但它是你的小宇宙的出口。
+              </li>
+            </ul>
+          </div>
+          <div class="foot">17 / 17</div>
+          <aside class="notes">
+            逐条口播参考（详见随附 speaker-notes.md）： ①
+            小宇宙——回收开场「自己的事业」那只手；② CMO 不是 CTO——分发能力 &gt;
+            构建能力； ③ 别扑腾——掉水里的物理常识，焦虑时反而要松；④
+            勇气——三年前辞职前问自己的同一个问题，答案没变； ⑤
+            每个人都要有自己的事业——哪怕微不足道，先有，再长大。结束。谢谢大家。
+          </aside>
+        </section>
       </div>
-      <div class="source">Source:
-        <a href="https://artsandculture.google.com/story/leonardo-s-cover-letter-biblioteca-ambrosiana/sQVRpZ4EhlnSKg">Google Arts &amp; Culture</a> ·
-        <a href="https://www.britannica.com/biography/Leonardo-da-Vinci">Britannica</a>
-      </div>
-      <div class="foot">06 / 14</div>
-      <aside class="notes">
-        重点不是「他多才多艺」这种鸡汤，而是：文艺复兴稀缺的从来不是「最会画的」或「最会造炮的」，
-        而是「能跨领域架桥、拿一个问题从头做到尾」的人。这正是 AI 时代重新变稀缺的能力。
-      </aside>
-    </section>
+    </div>
 
-    <section data-fig="talent">
-      <div class="slide-pad">
-        <div class="kicker">02 · 同一种稀缺，隔了五百年</div>
-        <div class="fig" id="fig-talent"></div>
-      </div>
-      <div class="source">Source:
-        <a href="https://www.youtube.com/watch?v=3Y1G9najGiI">Werner Vogels · AWS re:Invent 2025</a>
-      </div>
-      <div class="foot">07 / 14</div>
-      <aside class="notes">
-        左：达·芬奇，背后是梅迪奇家族给的资金与「算力」。右：文艺复兴式 Builder，背后是一群并行的 AI agent。
-        杠杆换了，稀缺的人没换。Vogels 原话：「The work is yours, not that of the tools.」——活儿是你的，不是工具的。
-        底部那条「不变的」最关键：执行被接管后，判断什么值得做、怎么做对，始终是人的位置。
-      </aside>
-    </section>
+    <!-- reveal.js 本地脚本 -->
+    <script src="vendor/reveal/reveal.js"></script>
+    <script src="vendor/reveal/plugin/notes/notes.js"></script>
+    <script src="js/figures.js"></script>
+    <script src="js/app.js"></script>
+    <script data-pplx-inline-edit>
+      (function () {
+        if (window === window.top) return;
 
-    <section data-fig="none">
-      <div class="slide-pad">
-        <div class="kicker">02 · 文艺复兴式 Builder 的特质</div>
-        <h1 class="title-md">看懂、判对、为结果背责</h1>
-        <div class="grid g3" style="margin-top:0.5em;">
-          <div class="card"><div class="ct">好奇心</div><div class="cd">不断拆开东西、搞懂它怎么运作——做深做透的起点。</div></div>
-          <div class="card"><div class="ct">敢试 · 容错</div><div class="cd">真正的实验，事先不知道结果。失败是学习的一部分。</div></div>
-          <div class="card"><div class="ct">会沟通</div><div class="cd">对人、对 AI，把意图讲清楚和把技术想透同样重要。</div></div>
-          <div class="card"><div class="ct">Ownership</div><div class="cd">代码是 AI 写的，质量、合规、线上正确性的责任还是你的。</div></div>
-          <div class="card"><div class="ct">T 型</div><div class="cd">一处扎深，多处拓宽。看得见整个系统，才做得出好判断。</div></div>
-          <div class="card"><div class="ct">用机制</div><div class="cd">好意不产出好结果。在 AI 高速产出之上，加一层机制兜底。</div></div>
-        </div>
-      </div>
-      <div class="source">Source:
-        <a href="https://www.youtube.com/watch?v=3Y1G9najGiI">Werner Vogels · AWS re:Invent 2025</a> ·
-        <a href="https://www.youtube.com/watch?v=tqF_OBxUHPo">Tomer Cohen · Full-Stack Builder</a>
-      </div>
-      <div class="foot">08 / 14</div>
-      <aside class="notes">
-        六个特质不用逐条念，挑两三个有感觉的展开。最想留给观众的一句：
-        AI 接管了「执行」，而 comprehension、judgment、accountability 依然是人的位置。
-        Vogels 收尾金句：「Will AI make me obsolete? Absolutely not. If you evolve.」——会被淘汰的不是开发者，是不进化的开发者。
-      </aside>
-    </section>
+        const allowedParentOrigins = [
+          "https://www.perplexity.ai",
+          "https://perplexity.ai",
+          "https://testing.perplexity.ai",
+          "https://staging.perplexity.ai",
+          "https://*.preview.i.perplexity.ai",
+          "http://localhost:3000",
+          "http://127.0.0.1:3000",
+          "http://localhost:5173",
+          "http://127.0.0.1:5173",
+        ];
+        const MAX_FONT_BYTES = 500 * 1024;
+        const MAX_TOTAL_FONT_BYTES = 2 * 1024 * 1024;
+        let scrollForwarding = false;
+        let scrollRaf = 0;
+        let trustedTopOrigin = null;
 
-    <!-- ============ 章节 3 · 搭一家 AI Native 公司 ============ -->
-    <section data-fig="none">
-      <div class="slide-pad center">
-        <div class="sec-num">03</div>
-        <div class="sec-title">当我说「搭建<br>AI Native 公司」，<br>我在说什么</div>
-        <div class="steps" style="margin-top:0.9em;">
-          <div class="step"><div class="n">01</div><div class="t">让公司可被查询</div><div class="d">make it queryable</div></div>
-          <div class="step"><div class="n">02</div><div class="t">把动作连成闭环</div><div class="d">close the loop</div></div>
-          <div class="step"><div class="n">03</div><div class="t">增加被动技能</div><div class="d">各种 Buff</div></div>
-        </div>
-      </div>
-      <div class="foot">09 / 14</div>
-      <aside class="notes">
-        不是「上几个 AI 工具」。是把公司本身改造成三件事：能被查询、动作成闭环、能力会叠加。
-        接下来一页一张图，逐个讲。
-      </aside>
-    </section>
-
-    <section data-fig="query">
-      <div class="slide-pad">
-        <div class="kicker">03 · 第一件事</div>
-        <h1 class="title-md">让公司可被查询 <span style="font-family:var(--mono);font-size:0.55em;color:var(--grey);">make it queryable</span></h1>
-        <p class="lede" style="margin-top:0.1em;margin-bottom:0.2em;font-size:0.66em;">空调知道室温才能自调；多数公司<strong>不知道自己的「室温」</strong> —— 知识散落、问不到。</p>
-        <div class="fig" id="fig-query"></div>
-      </div>
-      <div class="foot">10 / 14</div>
-      <aside class="notes">
-        类比你家空调：它知道室温、知道你设的温度，所以能自己调。大多数公司不知道自己的「室温」——
-        知识散落在文档、代码、对话、指标里，没法被一次问到。
-        让公司 queryable，就是让任何人/agent 一次提问，就能把散落各处的知识即时调出、还能追问。这是后面闭环的前提。
-      </aside>
-    </section>
-
-    <section data-fig="loop">
-      <div class="slide-pad">
-        <div class="kicker">03 · 第二件事</div>
-        <h1 class="title-md">把动作连成<span style="color:var(--rust);">闭环</span> <span style="font-family:var(--mono);font-size:0.55em;color:var(--grey);">close the loop</span></h1>
-        <p class="lede" style="margin-top:0.1em;margin-bottom:0.2em;font-size:0.66em;"><strong>开环</strong>：执行完就没下文，复盘靠开会。<strong style="color:var(--rust);">闭环</strong>：结果立刻回流，系统自我修正。</p>
-        <div class="fig" id="fig-loop"></div>
-      </div>
-      <div class="foot">11 / 14</div>
-      <aside class="notes">
-        开环：做决策、执行，然后……没有然后了。复盘靠开会，反馈靠下季度，每个环节都在丢信息。
-        闭环：执行→反馈→学习→改进，每个动作结果立刻回流，系统自我修正。
-        公司的速度不等于执行速度，等于「环路转一圈」的速度。中央那个旋转光点就是这个意思。
-      </aside>
-    </section>
-
-    <section data-fig="buff">
-      <div class="slide-pad">
-        <div class="kicker">03 · 第三件事</div>
-        <h1 class="title-md">增加公司的被动技能 <span style="font-family:var(--mono);font-size:0.55em;color:var(--grey);">各种 Buff</span></h1>
-        <p class="lede" style="margin-top:0.1em;margin-bottom:0.2em;font-size:0.66em;">每加一个能力（自动化 / agent / 记忆 / 闭环），公司基线<strong>永久抬高一截，叠加生效</strong>。</p>
-        <div class="fig" id="fig-buff"></div>
-      </div>
-      <div class="foot">12 / 14</div>
-      <aside class="notes">
-        被动技能 = 不用你每次操心、自动在背景里生效的能力。自动化、agent、记忆、闭环——
-        每加一个，公司的基线就被永久抬高一截，而且叠加生效（右上那条上扬虚线）。
-        这就是 AI Native 公司的复利：今天的投入变成明天的默认能力。
-      </aside>
-    </section>
-
-    <!-- ============ 章节 4 · 写在最后的私货 ============ -->
-    <section class="dark" data-fig="none">
-      <div class="slide-pad center">
-        <div class="sec-num">04</div>
-        <div class="sec-title">写在最后的私货</div>
-        <p class="lede big" style="margin-top:0.5em;color:#D8D1C5;">框架讲完了。剩下几句，是我自己真信、也一直在做的。</p>
-      </div>
-      <div class="foot">13 / 14</div>
-      <aside class="notes">
-        语气切换：前面是论证，这里是私人分享。慢一点，看着人讲。五条，不用全展开，挑当下最有感觉的。
-      </aside>
-    </section>
-
-    <section data-fig="none">
-      <div class="slide-pad">
-        <div class="kicker">04 · 私货</div>
-        <ul class="dash" style="margin-top:0.2em;">
-          <li><b>初心是小宇宙。</b>——真正驱动你走远的，不是市场有多大，是你心里那个不肯熄的小宇宙。</li>
-          <li><b>开发者该想的是怎么成为 CMO，而不是 CTO。</b>——技术不再是壁垒，让人知道、让人想用，才是。</li>
-          <li><b>不要拼命挣扎，就像掉水里别拼命扑腾。</b>——越用力越下沉；放松、借力，反而浮起来。</li>
-          <li><b>当下最重要的资质是勇气。</b>——和三年前我辞职时的答案，一字不差。</li>
-          <li><b>每个人都该有自己的事业，哪怕暂时微不足道。</b>——它现在不起眼，但它是你的小宇宙的出口。</li>
-        </ul>
-      </div>
-      <div class="foot">14 / 14</div>
-      <aside class="notes">
-        逐条口播参考（详见随附 speaker-notes.md）：
-        ① 小宇宙——回收开场「自己的事业」那只手；② CMO 不是 CTO——分发能力 &gt; 构建能力；
-        ③ 别扑腾——掉水里的物理常识，焦虑时反而要松；④ 勇气——三年前辞职前问自己的同一个问题，答案没变；
-        ⑤ 每个人都要有自己的事业——哪怕微不足道，先有，再长大。结束。谢谢大家。
-      </aside>
-    </section>
-
-  </div>
-</div>
-
-<!-- reveal.js 本地脚本 -->
-<script src="vendor/reveal/reveal.js"></script>
-<script src="vendor/reveal/plugin/notes/notes.js"></script>
-<script src="js/figures.js"></script>
-<script src="js/app.js"></script>
-<script data-pplx-inline-edit>
-(function () {
-  if (window === window.top) return;
-
-  const allowedParentOrigins = ["https://www.perplexity.ai","https://perplexity.ai","https://testing.perplexity.ai","https://staging.perplexity.ai","https://*.preview.i.perplexity.ai","http://localhost:3000","http://127.0.0.1:3000","http://localhost:5173","http://127.0.0.1:5173"];
-  const MAX_FONT_BYTES = 500 * 1024;
-  const MAX_TOTAL_FONT_BYTES = 2 * 1024 * 1024;
-  let scrollForwarding = false;
-  let scrollRaf = 0;
-  let trustedTopOrigin = null;
-
-  // Allow entries like "https://*.preview.i.perplexity.ai" — the wildcard
-  // matches a single DNS label (no dots), so "https://*.foo" cannot stretch
-  // across multiple labels.
-  function matchesAllowedOrigin(origin) {
-    if (!origin) return false;
-    for (const entry of allowedParentOrigins) {
-      if (!entry.includes("*")) {
-        if (entry === origin) return true;
-        continue;
-      }
-      const pattern = new RegExp(
-        "^" +
-          entry.replace(/[.+?^${}()|[\]\\]/g, "\\$&").replace(/\*/g, "[^.]+") +
-          "$",
-      );
-      if (pattern.test(origin)) return true;
-    }
-    return false;
-  }
-
-  // Trust decision: when the sender is same-origin-visible (event.origin is a
-  // real origin like https://www.perplexity.ai) we trust event.origin directly.
-  // When event.origin is "null" (opaque broker srcdoc), we fall back to the
-  // broker's stamped `parentOrigin` to identify the top window. The fallback
-  // is claim-only — we rely on the browser's native `targetOrigin` enforcement
-  // on the response path (see postToTrustedTop) to ensure replies can't be
-  // delivered to anyone but the actual top window of that claimed origin.
-  function getTrustedParentOrigin(event) {
-    const forwardedParentOrigin =
-      typeof event.data.parentOrigin === "string" ? event.data.parentOrigin : null;
-    const parentOrigin = event.origin === "null" ? forwardedParentOrigin : event.origin;
-    return matchesAllowedOrigin(parentOrigin) ? parentOrigin : null;
-  }
-
-  // All responses go to window.top with targetOrigin = the allowlisted origin.
-  // An attacker that iframes us inside their own null-origin broker can claim
-  // any parentOrigin they like, but the browser will drop the reply whenever
-  // the real top's origin doesn't match — so the screenshot never leaves.
-  function postToTrustedTop(message) {
-    if (!trustedTopOrigin) return;
-    try {
-      window.top.postMessage(message, trustedTopOrigin);
-    } catch (_error) {}
-  }
-
-  function inlineAll(original, clone) {
-    if (original.nodeType !== 1 || clone.nodeType !== 1) return;
-
-    try {
-      const computedStyle = getComputedStyle(original);
-      // cssText on a computed style is the serialized declaration in modern
-      // Chromium/Safari — a single read beats enumerating ~400 longhand
-      // properties. Firefox returns "" here, so we fall back on empty.
-      const serialized = computedStyle.cssText;
-      if (serialized) {
-        clone.style.cssText = serialized;
-      } else {
-        const parts = new Array(computedStyle.length);
-        for (let index = 0; index < computedStyle.length; index += 1) {
-          const property = computedStyle[index];
-          parts[index] = `${property}:${computedStyle.getPropertyValue(property)};`;
+        // Allow entries like "https://*.preview.i.perplexity.ai" — the wildcard
+        // matches a single DNS label (no dots), so "https://*.foo" cannot stretch
+        // across multiple labels.
+        function matchesAllowedOrigin(origin) {
+          if (!origin) return false;
+          for (const entry of allowedParentOrigins) {
+            if (!entry.includes("*")) {
+              if (entry === origin) return true;
+              continue;
+            }
+            const pattern = new RegExp(
+              "^" +
+                entry
+                  .replace(/[.+?^${}()|[\]\\]/g, "\\$&")
+                  .replace(/\*/g, "[^.]+") +
+                "$",
+            );
+            if (pattern.test(origin)) return true;
+          }
+          return false;
         }
-        clone.style.cssText = parts.join("");
-      }
-    } catch (_error) {}
 
-    const originalChildren = original.children;
-    const clonedChildren = clone.children;
-    for (
-      let index = 0;
-      index < originalChildren.length && index < clonedChildren.length;
-      index += 1
-    ) {
-      inlineAll(originalChildren[index], clonedChildren[index]);
-    }
-  }
+        // Trust decision: when the sender is same-origin-visible (event.origin is a
+        // real origin like https://www.perplexity.ai) we trust event.origin directly.
+        // When event.origin is "null" (opaque broker srcdoc), we fall back to the
+        // broker's stamped `parentOrigin` to identify the top window. The fallback
+        // is claim-only — we rely on the browser's native `targetOrigin` enforcement
+        // on the response path (see postToTrustedTop) to ensure replies can't be
+        // delivered to anyone but the actual top window of that claimed origin.
+        function getTrustedParentOrigin(event) {
+          const forwardedParentOrigin =
+            typeof event.data.parentOrigin === "string"
+              ? event.data.parentOrigin
+              : null;
+          const parentOrigin =
+            event.origin === "null" ? forwardedParentOrigin : event.origin;
+          return matchesAllowedOrigin(parentOrigin) ? parentOrigin : null;
+        }
 
-  function extractFontUrl(srcValue) {
-    const matches = [
-      ...srcValue.matchAll(
-        /url\(["']?([^"')]+)["']?\)(?:\s*format\(["']?([^"')]+)["']?\))?/gi,
-      ),
-    ];
-    if (matches.length === 0) return null;
-    const woff2 = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff2"));
-    if (woff2) return woff2[1];
-    const woff = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff"));
-    if (woff) return woff[1];
-    return matches[0][1];
-  }
+        // All responses go to window.top with targetOrigin = the allowlisted origin.
+        // An attacker that iframes us inside their own null-origin broker can claim
+        // any parentOrigin they like, but the browser will drop the reply whenever
+        // the real top's origin doesn't match — so the screenshot never leaves.
+        function postToTrustedTop(message) {
+          if (!trustedTopOrigin) return;
+          try {
+            window.top.postMessage(message, trustedTopOrigin);
+          } catch (_error) {}
+        }
 
-  // Cache resolved font URL -> data URI across captures. Fonts on a page
-  // essentially never change, and a batch run emits multiple captures back to
-  // back — without this we'd refetch + re-base64 every time.
-  const fontDataUriCache = new Map();
-  const SRC_DECLARATION_RE = /src\s*:\s*[^;}]+/i;
+        function inlineAll(original, clone) {
+          if (original.nodeType !== 1 || clone.nodeType !== 1) return;
 
-  async function fetchAsDataUri(url) {
-    if (fontDataUriCache.has(url)) return fontDataUriCache.get(url);
-    let dataUri = null;
-    try {
-      const response = await fetch(url, { mode: "cors", credentials: "omit" });
-      if (response.ok) {
-        const blob = await response.blob();
-        if (blob.size <= MAX_FONT_BYTES) {
-          dataUri = await new Promise((resolve) => {
-            const reader = new FileReader();
-            reader.onloadend = () =>
-              resolve(typeof reader.result === "string" ? reader.result : null);
-            reader.onerror = () => resolve(null);
-            reader.readAsDataURL(blob);
+          try {
+            const computedStyle = getComputedStyle(original);
+            // cssText on a computed style is the serialized declaration in modern
+            // Chromium/Safari — a single read beats enumerating ~400 longhand
+            // properties. Firefox returns "" here, so we fall back on empty.
+            const serialized = computedStyle.cssText;
+            if (serialized) {
+              clone.style.cssText = serialized;
+            } else {
+              const parts = new Array(computedStyle.length);
+              for (let index = 0; index < computedStyle.length; index += 1) {
+                const property = computedStyle[index];
+                parts[index] =
+                  `${property}:${computedStyle.getPropertyValue(property)};`;
+              }
+              clone.style.cssText = parts.join("");
+            }
+          } catch (_error) {}
+
+          const originalChildren = original.children;
+          const clonedChildren = clone.children;
+          for (
+            let index = 0;
+            index < originalChildren.length && index < clonedChildren.length;
+            index += 1
+          ) {
+            inlineAll(originalChildren[index], clonedChildren[index]);
+          }
+        }
+
+        function extractFontUrl(srcValue) {
+          const matches = [
+            ...srcValue.matchAll(
+              /url\(["']?([^"')]+)["']?\)(?:\s*format\(["']?([^"')]+)["']?\))?/gi,
+            ),
+          ];
+          if (matches.length === 0) return null;
+          const woff2 = matches.find(
+            (m) => m[2] && m[2].toLowerCase().includes("woff2"),
+          );
+          if (woff2) return woff2[1];
+          const woff = matches.find(
+            (m) => m[2] && m[2].toLowerCase().includes("woff"),
+          );
+          if (woff) return woff[1];
+          return matches[0][1];
+        }
+
+        // Cache resolved font URL -> data URI across captures. Fonts on a page
+        // essentially never change, and a batch run emits multiple captures back to
+        // back — without this we'd refetch + re-base64 every time.
+        const fontDataUriCache = new Map();
+        const SRC_DECLARATION_RE = /src\s*:\s*[^;}]+/i;
+
+        async function fetchAsDataUri(url) {
+          if (fontDataUriCache.has(url)) return fontDataUriCache.get(url);
+          let dataUri = null;
+          try {
+            const response = await fetch(url, {
+              mode: "cors",
+              credentials: "omit",
+            });
+            if (response.ok) {
+              const blob = await response.blob();
+              if (blob.size <= MAX_FONT_BYTES) {
+                dataUri = await new Promise((resolve) => {
+                  const reader = new FileReader();
+                  reader.onloadend = () =>
+                    resolve(
+                      typeof reader.result === "string" ? reader.result : null,
+                    );
+                  reader.onerror = () => resolve(null);
+                  reader.readAsDataURL(blob);
+                });
+              }
+            }
+          } catch (_error) {
+            dataUri = null;
+          }
+          fontDataUriCache.set(url, dataUri);
+          return dataUri;
+        }
+
+        function collectFontFaceRuleTexts() {
+          const rules = [];
+          for (const sheet of document.styleSheets) {
+            let cssRules;
+            try {
+              cssRules = sheet.cssRules;
+            } catch (_error) {
+              continue;
+            }
+            if (!cssRules) continue;
+            for (const rule of cssRules) {
+              const cssText = rule.cssText || "";
+              if (cssText.startsWith("@font-face")) rules.push(cssText);
+            }
+          }
+          return rules;
+        }
+
+        async function buildInlinedFontCss() {
+          const ruleTexts = collectFontFaceRuleTexts();
+          if (ruleTexts.length === 0) return null;
+
+          const resolved = ruleTexts.map((cssText) => {
+            if (!SRC_DECLARATION_RE.test(cssText)) return null;
+            const srcMatch = cssText.match(/src\s*:\s*([^;}]+)[;}]/i);
+            if (!srcMatch) return null;
+            const url = extractFontUrl(srcMatch[1]);
+            if (!url) return null;
+            try {
+              return { cssText, url: new URL(url, document.baseURI).href };
+            } catch (_error) {
+              return null;
+            }
+          });
+
+          const dataUris = await Promise.all(
+            resolved.map((entry) =>
+              entry ? fetchAsDataUri(entry.url) : Promise.resolve(null),
+            ),
+          );
+
+          const inlined = [];
+          let totalBytes = 0;
+          for (let index = 0; index < resolved.length; index += 1) {
+            const entry = resolved[index];
+            const dataUri = dataUris[index];
+            if (!entry || !dataUri) continue;
+            const approxBytes = dataUri.length * 0.75;
+            if (totalBytes + approxBytes > MAX_TOTAL_FONT_BYTES) break;
+            totalBytes += approxBytes;
+            inlined.push(
+              entry.cssText.replace(
+                SRC_DECLARATION_RE,
+                `src: url("${dataUri}")`,
+              ),
+            );
+          }
+          return inlined.length > 0 ? inlined.join("\n") : null;
+        }
+
+        function stripExternal(clone) {
+          const images = clone.querySelectorAll("img");
+          for (let index = 0; index < images.length; index += 1) {
+            const src = images[index].getAttribute("src");
+            if (src && !src.startsWith("data:"))
+              images[index].removeAttribute("src");
+          }
+
+          const elements = clone.querySelectorAll("*");
+          for (let index = 0; index < elements.length; index += 1) {
+            const style = elements[index].style.cssText;
+            if (style && style.includes("url(")) {
+              elements[index].style.cssText = style.replace(
+                /url\(["']?(?!data:)[^)"']*["']?\)/gi,
+                "none",
+              );
+            }
+          }
+        }
+
+        function emitScroll() {
+          scrollRaf = 0;
+          if (!scrollForwarding) return;
+          postToTrustedTop({
+            type: "INLINE_EDIT_SCROLL",
+            scrollX: window.scrollX,
+            scrollY: window.scrollY,
           });
         }
-      }
-    } catch (_error) {
-      dataUri = null;
-    }
-    fontDataUriCache.set(url, dataUri);
-    return dataUri;
-  }
 
-  function collectFontFaceRuleTexts() {
-    const rules = [];
-    for (const sheet of document.styleSheets) {
-      let cssRules;
-      try {
-        cssRules = sheet.cssRules;
-      } catch (_error) {
-        continue;
-      }
-      if (!cssRules) continue;
-      for (const rule of cssRules) {
-        const cssText = rule.cssText || "";
-        if (cssText.startsWith("@font-face")) rules.push(cssText);
-      }
-    }
-    return rules;
-  }
-
-  async function buildInlinedFontCss() {
-    const ruleTexts = collectFontFaceRuleTexts();
-    if (ruleTexts.length === 0) return null;
-
-    const resolved = ruleTexts.map((cssText) => {
-      if (!SRC_DECLARATION_RE.test(cssText)) return null;
-      const srcMatch = cssText.match(/src\s*:\s*([^;}]+)[;}]/i);
-      if (!srcMatch) return null;
-      const url = extractFontUrl(srcMatch[1]);
-      if (!url) return null;
-      try {
-        return { cssText, url: new URL(url, document.baseURI).href };
-      } catch (_error) {
-        return null;
-      }
-    });
-
-    const dataUris = await Promise.all(
-      resolved.map((entry) => (entry ? fetchAsDataUri(entry.url) : Promise.resolve(null))),
-    );
-
-    const inlined = [];
-    let totalBytes = 0;
-    for (let index = 0; index < resolved.length; index += 1) {
-      const entry = resolved[index];
-      const dataUri = dataUris[index];
-      if (!entry || !dataUri) continue;
-      const approxBytes = dataUri.length * 0.75;
-      if (totalBytes + approxBytes > MAX_TOTAL_FONT_BYTES) break;
-      totalBytes += approxBytes;
-      inlined.push(entry.cssText.replace(SRC_DECLARATION_RE, `src: url("${dataUri}")`));
-    }
-    return inlined.length > 0 ? inlined.join("\n") : null;
-  }
-
-  function stripExternal(clone) {
-    const images = clone.querySelectorAll("img");
-    for (let index = 0; index < images.length; index += 1) {
-      const src = images[index].getAttribute("src");
-      if (src && !src.startsWith("data:")) images[index].removeAttribute("src");
-    }
-
-    const elements = clone.querySelectorAll("*");
-    for (let index = 0; index < elements.length; index += 1) {
-      const style = elements[index].style.cssText;
-      if (style && style.includes("url(")) {
-        elements[index].style.cssText = style.replace(
-          /url\(["']?(?!data:)[^)"']*["']?\)/gi,
-          "none",
+        window.addEventListener(
+          "scroll",
+          function () {
+            if (!scrollForwarding || scrollRaf) return;
+            scrollRaf = requestAnimationFrame(emitScroll);
+          },
+          { passive: true, capture: true },
         );
-      }
-    }
-  }
 
-  function emitScroll() {
-    scrollRaf = 0;
-    if (!scrollForwarding) return;
-    postToTrustedTop({
-      type: "INLINE_EDIT_SCROLL",
-      scrollX: window.scrollX,
-      scrollY: window.scrollY,
-    });
-  }
+        async function handleCaptureRequest(event) {
+          const requestId = event.data.requestId;
+          const scrollX = window.scrollX;
+          const scrollY = window.scrollY;
+          const width = window.innerWidth;
+          const height = window.innerHeight;
 
-  window.addEventListener(
-    "scroll",
-    function () {
-      if (!scrollForwarding || scrollRaf) return;
-      scrollRaf = requestAnimationFrame(emitScroll);
-    },
-    { passive: true, capture: true },
-  );
+          function postResult(dataUrl) {
+            postToTrustedTop({
+              type: "INLINE_EDIT_SCREENSHOT_RESULT",
+              requestId,
+              dataUrl,
+              scrollX,
+              scrollY,
+            });
+          }
 
-  async function handleCaptureRequest(event) {
-    const requestId = event.data.requestId;
-    const scrollX = window.scrollX;
-    const scrollY = window.scrollY;
-    const width = window.innerWidth;
-    const height = window.innerHeight;
+          try {
+            // Wait for any pending web fonts to resolve so both inline metrics and
+            // the @font-face inlining below see the same loaded faces.
+            if (document.fonts && document.fonts.ready) {
+              try {
+                await document.fonts.ready;
+              } catch (_error) {}
+            }
 
-    function postResult(dataUrl) {
-      postToTrustedTop({
-        type: "INLINE_EDIT_SCREENSHOT_RESULT",
-        requestId,
-        dataUrl,
-        scrollX,
-        scrollY,
-      });
-    }
+            const clone = document.documentElement.cloneNode(true);
+            inlineAll(document.documentElement, clone);
 
-    try {
-      // Wait for any pending web fonts to resolve so both inline metrics and
-      // the @font-face inlining below see the same loaded faces.
-      if (document.fonts && document.fonts.ready) {
-        try {
-          await document.fonts.ready;
-        } catch (_error) {}
-      }
+            const removedNodes = clone.querySelectorAll(
+              'script,link[rel="stylesheet"],style',
+            );
+            for (let index = 0; index < removedNodes.length; index += 1) {
+              removedNodes[index].remove();
+            }
 
-      const clone = document.documentElement.cloneNode(true);
-      inlineAll(document.documentElement, clone);
+            stripExternal(clone);
 
-      const removedNodes = clone.querySelectorAll("script,link[rel=\"stylesheet\"],style");
-      for (let index = 0; index < removedNodes.length; index += 1) {
-        removedNodes[index].remove();
-      }
+            // Re-embed web fonts as data-URI @font-face rules so the SVG rasterizer
+            // can resolve them — external font URLs aren't fetched during
+            // foreignObject rendering, which would otherwise force a fallback face
+            // and change text metrics.
+            const inlinedFontCss = await buildInlinedFontCss();
+            if (inlinedFontCss) {
+              const styleEl = document.createElement("style");
+              styleEl.textContent = inlinedFontCss;
+              const head = clone.querySelector("head");
+              if (head) head.appendChild(styleEl);
+              else clone.insertBefore(styleEl, clone.firstChild);
+            }
 
-      stripExternal(clone);
+            const html = new XMLSerializer().serializeToString(clone);
+            const svg =
+              `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}">` +
+              '<foreignObject width="100%" height="100%">' +
+              `<div xmlns="http://www.w3.org/1999/xhtml" style="width:${width}px;height:${height}px;overflow:hidden">` +
+              `<div style="position:relative;left:-${scrollX}px;top:-${scrollY}px">` +
+              html +
+              "</div></div></foreignObject></svg>";
+            const svgUrl = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+            const image = new Image();
+            image.onload = function () {
+              const canvas = document.createElement("canvas");
+              canvas.width = width;
+              canvas.height = height;
+              canvas.getContext("2d").drawImage(image, 0, 0);
+              postResult(canvas.toDataURL("image/png"));
+            };
+            image.onerror = function () {
+              postResult(null);
+            };
+            image.src = svgUrl;
+          } catch (_error) {
+            postResult(null);
+          }
+        }
 
-      // Re-embed web fonts as data-URI @font-face rules so the SVG rasterizer
-      // can resolve them — external font URLs aren't fetched during
-      // foreignObject rendering, which would otherwise force a fallback face
-      // and change text metrics.
-      const inlinedFontCss = await buildInlinedFontCss();
-      if (inlinedFontCss) {
-        const styleEl = document.createElement("style");
-        styleEl.textContent = inlinedFontCss;
-        const head = clone.querySelector("head");
-        if (head) head.appendChild(styleEl);
-        else clone.insertBefore(styleEl, clone.firstChild);
-      }
+        window.addEventListener("message", function (event) {
+          if (!event.data) return;
+          // Only accept messages from the direct parent frame. Blocks sibling /
+          // unrelated-window postMessage senders that could otherwise reach us.
+          if (event.source !== window.parent) return;
 
-      const html = new XMLSerializer().serializeToString(clone);
-      const svg =
-        `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}">` +
-        '<foreignObject width="100%" height="100%">' +
-        `<div xmlns="http://www.w3.org/1999/xhtml" style="width:${width}px;height:${height}px;overflow:hidden">` +
-        `<div style="position:relative;left:-${scrollX}px;top:-${scrollY}px">` +
-        html +
-        "</div></div></foreignObject></svg>";
-      const svgUrl = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
-      const image = new Image();
-      image.onload = function () {
-        const canvas = document.createElement("canvas");
-        canvas.width = width;
-        canvas.height = height;
-        canvas.getContext("2d").drawImage(image, 0, 0);
-        postResult(canvas.toDataURL("image/png"));
-      };
-      image.onerror = function () {
-        postResult(null);
-      };
-      image.src = svgUrl;
-    } catch (_error) {
-      postResult(null);
-    }
-  }
+          const trustedParentOrigin = getTrustedParentOrigin(event);
+          if (!trustedParentOrigin) return;
+          trustedTopOrigin = trustedParentOrigin;
 
-  window.addEventListener("message", function (event) {
-    if (!event.data) return;
-    // Only accept messages from the direct parent frame. Blocks sibling /
-    // unrelated-window postMessage senders that could otherwise reach us.
-    if (event.source !== window.parent) return;
+          if (event.data.type === "INLINE_EDIT_SCROLL_START") {
+            scrollForwarding = true;
+            emitScroll();
+            return;
+          }
 
-    const trustedParentOrigin = getTrustedParentOrigin(event);
-    if (!trustedParentOrigin) return;
-    trustedTopOrigin = trustedParentOrigin;
+          if (event.data.type === "INLINE_EDIT_SCROLL_STOP") {
+            scrollForwarding = false;
+            if (scrollRaf) cancelAnimationFrame(scrollRaf);
+            scrollRaf = 0;
+            return;
+          }
 
-    if (event.data.type === "INLINE_EDIT_SCROLL_START") {
-      scrollForwarding = true;
-      emitScroll();
-      return;
-    }
+          if (event.data.type !== "INLINE_EDIT_CAPTURE_REQUEST") return;
 
-    if (event.data.type === "INLINE_EDIT_SCROLL_STOP") {
-      scrollForwarding = false;
-      if (scrollRaf) cancelAnimationFrame(scrollRaf);
-      scrollRaf = 0;
-      return;
-    }
-
-    if (event.data.type !== "INLINE_EDIT_CAPTURE_REQUEST") return;
-
-    handleCaptureRequest(event);
-  });
-})();
-
-
-</script></body>
+          handleCaptureRequest(event);
+        });
+      })();
+    </script>
+  </body>
 </html>
