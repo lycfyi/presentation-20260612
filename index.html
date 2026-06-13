@@ -227,7 +227,7 @@
                   <div class="cd">
                     <b>当年</b>铅笔、透视法（消失点）、显微镜、望远镜、印刷术 ——
                     人类第一次能更精准地记录、观察、传播知识。<br />
-                    <b>今天</b>AI 开发工具、云基础设施、新 IDE 与 agent
+                    <b>今天</b>AI 工具、大模型、云基础设施、 agent
                     工作流，正像当年的印刷术，把「构建复杂系统的门槛」压到前所未有的低。
                   </div>
                 </div>
@@ -278,42 +278,54 @@
               >
             </p>
             <div class="talent-layout">
-              <div class="cmp">
-                <div class="h">维度</div>
-                <div class="h">达·芬奇</div>
-                <div class="h b">超级个体：文艺复兴式 Builder</div>
+              <div class="tl-col">
+                <div class="cmp">
+                  <div class="h">维度</div>
+                  <div class="h">达·芬奇</div>
+                  <div class="h b">超级个体：文艺复兴式 Builder</div>
 
-                <div class="d">核心驱动力</div>
-                <div>强烈好奇心，痴迷理解自然与人体</div>
-                <div class="b">
-                  同样的好奇心，痴迷理解<strong>复杂系统</strong>（技术 × 业务 ×
-                  社会）
+                  <div class="d">核心驱动力</div>
+                  <div>好奇心，痴迷理解自然</div>
+                  <div class="b">
+                    同样的好奇心，痴迷理解<strong>复杂系统</strong>
+                  </div>
+
+                  <div class="d">工具</div>
+                  <div>画笔、工坊、手工仪器</div>
+                  <div class="b">云、AI、<strong>LLM / agents</strong></div>
+
+                  <div class="d">知识结构</div>
+                  <div>艺术 × 科学 × 工程</div>
+                  <div class="b">CS × 产品 × 业务 × 行业</div>
+
+                  <div class="d">与工具的关系</div>
+                  <div>用当时最强工具，也发明新工具</div>
+                  <div class="b">用云 / AI，也发明新 workflow 与平台</div>
                 </div>
-
-                <div class="d">工具</div>
-                <div>画笔、纸张、机械工坊、手工仪器</div>
-                <div class="b">
-                  云、AI 编程助手、IDE、<strong>LLM / agents</strong>、仿真环境
-                </div>
-
-                <div class="d">研究对象</div>
-                <div>飞行、机械、解剖、光影、建筑</div>
-                <div class="b">
-                  分布式系统、AI、用户行为、经济激励、组织结构
-                </div>
-
-                <div class="d">知识结构</div>
-                <div>艺术 × 科学 × 工程 × 解剖</div>
-                <div class="b">CS × 产品 × 业务模型 × 行业 know-how</div>
-
-                <div class="d">影响路径</div>
-                <div>作品、手稿、少量直接工程项目</div>
-                <div class="b">SaaS、基础设施、开源、社区与组织形态</div>
-
-                <div class="d">与时代工具的关系</div>
-                <div>用当时最先进技术，也发明新工具</div>
-                <div class="b">
-                  用云 / AI 标准工具，也发明新工具、workflow 与平台
+                <div
+                  class="definition-band"
+                  style="
+                    margin-top: 0.7em;
+                    display: flex;
+                    gap: 0.8em;
+                    align-items: center;
+                  "
+                >
+                  <img
+                    src="assets/dankoe-multiple-interests-tweet.png"
+                    alt="Dan Koe 推文：If you have multiple interests, do not waste the next 2-3 years"
+                    style="width: 168px; flex: 0 0 auto; border-radius: 6px"
+                  />
+                  <div>
+                    <div class="t">为什么是这种人</div>
+                    <p style="font-size: 0.46em; line-height: 1.5">
+                      “Your edge lies more in
+                      <strong>intersection</strong> than it does in
+                      expertise.”<br />
+                      你的优势在<strong>交叉</strong>，而非专精。
+                      <span style="color: var(--slate)">— Dan Koe</span>
+                    </p>
+                  </div>
                 </div>
               </div>
               <div class="fun-fact">
@@ -451,9 +463,7 @@
         <section data-fig="span">
           <div class="slide-pad">
             <div class="kicker">02 · 大扁平化</div>
-            <h1 class="title-md">
-              层级曾是生物跨度逼出来的，AI 第一次把它压平
-            </h1>
+            <h1 class="title-md">层级曾是生物限制逼出来的</h1>
             <div class="definition-band">
               <div class="t">SPAN OF CONTROL</div>
               <p>
@@ -514,30 +524,113 @@
         <section class="dark" data-fig="none">
           <div class="slide-pad">
             <div class="kicker">02 · 层级终局</div>
-
+            <h1 class="title-md" style="margin-top: 0.25em">
+              中层消失后，落到<span style="color: var(--rust)">两条实操原则</span>
+            </h1>
             <div
-              class="quote"
-              style="font-size: 0.96em; max-width: 25em; margin-top: 0.7em"
+              style="
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1em;
+                margin-top: 0.95em;
+              "
             >
-              公司的快与慢，只取决于<em>信息怎么流动</em>；层级和中层，恰恰<em>挡住</em>了信息流动。<br />
-              两千年来，问题从来不是「要不要层级」，而是「<strong>信息路由是不是只能由人来做</strong>」——现在，不再是了。
-              <span class="src"
-                >Jack Dorsey · Block《From Hierarchy to Intelligence》</span
+              <div
+                style="
+                  border: 1px solid rgba(255, 255, 255, 0.16);
+                  border-radius: 12px;
+                  padding: 0.95em 1.05em;
+                "
               >
+                <div
+                  style="
+                    font-family: var(--mono);
+                    font-size: 0.4em;
+                    letter-spacing: 0.16em;
+                    color: var(--gold);
+                    margin-bottom: 0.55em;
+                  "
+                >
+                  横向 · 流程
+                </div>
+                <div
+                  style="
+                    font-family: var(--fh);
+                    font-weight: 700;
+                    font-size: 0.66em;
+                    line-height: 1.38;
+                    color: var(--paper);
+                  "
+                >
+                  所有工作<strong style="color: var(--rust)">端到端</strong
+                  >做完，别拆成接力
+                </div>
+                <div
+                  style="
+                    font-size: 0.46em;
+                    line-height: 1.55;
+                    color: #d8d1c5;
+                    margin-top: 0.55em;
+                  "
+                >
+                  每多拆一步，就多一次人和人之间 <em>lossy</em>
+                  的转述、对齐与等待。能让一个闭环从头做到尾，就不要切成若干工序、再用人去缝。
+                </div>
+              </div>
+              <div
+                style="
+                  border: 1px solid rgba(255, 255, 255, 0.16);
+                  border-radius: 12px;
+                  padding: 0.95em 1.05em;
+                "
+              >
+                <div
+                  style="
+                    font-family: var(--mono);
+                    font-size: 0.4em;
+                    letter-spacing: 0.16em;
+                    color: var(--gold);
+                    margin-bottom: 0.55em;
+                  "
+                >
+                  纵向 · 层级
+                </div>
+                <div
+                  style="
+                    font-family: var(--fh);
+                    font-weight: 700;
+                    font-size: 0.66em;
+                    line-height: 1.38;
+                    color: var(--paper);
+                  "
+                >
+                  把层级<strong style="color: var(--rust)">拍扁</strong>
+                </div>
+                <div
+                  style="
+                    font-size: 0.46em;
+                    line-height: 1.55;
+                    color: #d8d1c5;
+                    margin-top: 0.55em;
+                  "
+                >
+                  信息路由交给系统，不再靠中层层层上下转述。组织塌回贴着工作与客户的少数角色，人退到
+                  edge 做判断、做高风险时刻的取舍。
+                </div>
+              </div>
             </div>
           </div>
           <aside class="notes">
             语气切到 dark 是刻意的，这页是第 2
             章的收口。先把张力点破：上一页「AI 帮 manager 多管几十人」还是把 AI
-            当更好的对讲机——那只是把旧结构跑得快一点。真正的终局是把层级唯一在做的事，也就是「信息路由」，整个交给系统。
-            然后讲倒置（这是 Block / Jack Dorsey
-            的核心洞见）：传统公司里智能散在每个人身上、靠层级上下转述；终局里智能住进系统本身，人不是被取代，而是上移、退到
-            edge——做判断、做伦理决策、做高风险时刻的取舍，那才是行动真正发生的地方。
-            接着落到「组织去掉中间层后长什么样」：没有常驻中层，组织塌回三种贴着工作和客户的角色——IC（建造运营，world
-            model
-            替代经理给上下文）、DRI（对某个客户结果全权负责、按需调资源）、Player-coach（又做事又带人，接替只做信息路由的旧经理）。三个角色一句话带过即可，别逐字念。
-            最后把情绪落在 Dorsey 那句信息流金句上，呼应前面 span of
-            control：公司快慢只取决于信息怎么流动，层级恰恰挡住它；两千年来问题从来不是「要不要层级」，而是「信息路由是不是只能由人来做」——现在不再是了。念完停一拍再翻页。
+            当更好的对讲机——那只是把旧结构跑得快一点。真正的终局，是把层级唯一在做的事「信息路由」整个交给系统，于是组织在两个方向上同时塌掉。
+            这页不念金句，落到两条可以直接照做的原则。 横向（流程）：所有工作尽量
+            <strong>端到端</strong>做完，别拆成接力。每多拆一步，就多一次人和人之间
+            lossy
+            的转述、对齐和等待——拆步骤本质上是在流程里插入有损信道。能让一个闭环从头做到尾，就不要切成若干工序再用人去缝。
+            纵向（层级）：把层级<strong>拍扁</strong>。信息路由交给系统，不再靠中层层层上下转述，组织塌回贴着工作与客户的少数角色，人退到
+            edge 做判断、做高风险时刻的取舍。 这两条正好呼应前面 span of
+            control：横向减少人际交接、纵向减少层级，都是在缩短信息流动的路径。念完停一拍再翻页。
           </aside>
         </section>
 
